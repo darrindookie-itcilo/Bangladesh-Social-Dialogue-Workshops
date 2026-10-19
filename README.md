@@ -1,5 +1,7 @@
 # Bangladesh social dialogue workshops · 2026
 
+[Open the published dashboard](https://darrindookie-itcilo.github.io/Bangladesh-Social-Dialogue-Workshops/) · [Publication workflow](https://github.com/darrindookie-itcilo/Bangladesh-Social-Dialogue-Workshops/actions)
+
 A combined ITCILO dashboard with separate programmes for:
 
 1. **A3519987** — Strengthening Tripartite Social Dialogue Institutions: From Policy Design to Effective Implementation and Institutional Transformation. Dhaka, **26–29 October 2026**, three and a half days.
