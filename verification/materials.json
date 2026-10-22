@@ -1,0 +1,439 @@
+[
+  {
+    "path": "downloads/A3519987/A3519987_Agenda_Strengthening_Tripartite_SD_Institutions_Rev.3.docx",
+    "sha256": "ff6363cefbbe5026a715a6987dc04a7d7b5c0d448ff228b156cb2c0158ac3265",
+    "kind": "agenda",
+    "source": "A3519987_Agenda_Strengthening_Tripartite_SD_Institutions_Rev.3.docx"
+  },
+  {
+    "path": "downloads/A3519987/A3519987_H1.1_What_works_and_what_blocks.docx",
+    "sha256": "64cb5cc6fb614cd0db02eb5379860bf0e5bef55bf33b68ebcb6eff6b3b7c9906",
+    "kind": "handout",
+    "source": "A3519987_Materials/Exercise_Handouts/A3519987_H1.1_What_works_and_what_blocks.docx"
+  },
+  {
+    "path": "downloads/A3519987/A3519987_H10_Proposal_and_action_plan_template.docx",
+    "sha256": "1b27312b30b78c48280556e34205ccb894657449faf0de4ff71e78cbdc13ec6a",
+    "kind": "handout",
+    "source": "A3519987_Materials/Exercise_Handouts/A3519987_H10_Proposal_and_action_plan_template.docx"
+  },
+  {
+    "path": "downloads/A3519987/A3519987_H11_Peer_review_sheet.docx",
+    "sha256": "c1097bf1dee3b4d664aabb36aa93916296b461354ec467d02524e8f83a20038e",
+    "kind": "handout",
+    "source": "A3519987_Materials/Exercise_Handouts/A3519987_H11_Peer_review_sheet.docx"
+  },
+  {
+    "path": "downloads/A3519987/A3519987_H12_Plenary_feedback_and_commitment_card.docx",
+    "sha256": "7dd8573f036f2d15a42db6365bbd3c3f3ec3932f2abcd7917178390568ecccc1",
+    "kind": "handout",
+    "source": "A3519987_Materials/Exercise_Handouts/A3519987_H12_Plenary_feedback_and_commitment_card.docx"
+  },
+  {
+    "path": "downloads/A3519987/A3519987_H2.1_Institutional_mapping_sheet.docx",
+    "sha256": "90ba550d3f77bfacb8199344a00dd994c38745ad99a5e922107c48e4c6705a08",
+    "kind": "handout",
+    "source": "A3519987_Materials/Exercise_Handouts/A3519987_H2.1_Institutional_mapping_sheet.docx"
+  },
+  {
+    "path": "downloads/A3519987/A3519987_H3.1_Comparative_cases_and_transferability_test.docx",
+    "sha256": "c6096f58da19cd3beb4b76032a8d85fcf5ea93eb21517b500bdb487fe0e1d30f",
+    "kind": "handout",
+    "source": "A3519987_Materials/Exercise_Handouts/A3519987_H3.1_Comparative_cases_and_transferability_test.docx"
+  },
+  {
+    "path": "downloads/A3519987/A3519987_H4.1_Tripartite_meeting_role_play.docx",
+    "sha256": "55fb2c69bac2c25eb25f12cef54cb2ba45d7c111515086209409e87785b1271e",
+    "kind": "handout",
+    "source": "A3519987_Materials/Exercise_Handouts/A3519987_H4.1_Tripartite_meeting_role_play.docx"
+  },
+  {
+    "path": "downloads/A3519987/A3519987_H4.2_Coordination_protocol_template.docx",
+    "sha256": "57df1a2875c5ff589f17414ab5a0776e0b3018373209223d6eee53b6026c2a78",
+    "kind": "handout",
+    "source": "A3519987_Materials/Exercise_Handouts/A3519987_H4.2_Coordination_protocol_template.docx"
+  },
+  {
+    "path": "downloads/A3519987/A3519987_H5.1_Inclusion_audit.docx",
+    "sha256": "41ce9478f96b77adec7a2cc95fbc87325e2d48fcef053bde590a998ca7cea145",
+    "kind": "handout",
+    "source": "A3519987_Materials/Exercise_Handouts/A3519987_H5.1_Inclusion_audit.docx"
+  },
+  {
+    "path": "downloads/A3519987/A3519987_H6.1_Pre_negotiation_fact_base.docx",
+    "sha256": "cb9bf0ddddb25697d2cc6e2ecb937ca00dc5decac9c980cd3096c6a55ba3cfd6",
+    "kind": "handout",
+    "source": "A3519987_Materials/Exercise_Handouts/A3519987_H6.1_Pre_negotiation_fact_base.docx"
+  },
+  {
+    "path": "downloads/A3519987/A3519987_H7.1_Conclusions_and_implementation_framework.docx",
+    "sha256": "edf8dc24df6cd676d420d255ee49c2b974bd5cd6781e59e82dd964e93519013a",
+    "kind": "handout",
+    "source": "A3519987_Materials/Exercise_Handouts/A3519987_H7.1_Conclusions_and_implementation_framework.docx"
+  },
+  {
+    "path": "downloads/A3519987/A3519987_H8.1_Register_and_indicator_set.docx",
+    "sha256": "479b8e05dd7b1c06e853f0cb509bf75450217e07b39440479142f4af30f7eb49",
+    "kind": "handout",
+    "source": "A3519987_Materials/Exercise_Handouts/A3519987_H8.1_Register_and_indicator_set.docx"
+  },
+  {
+    "path": "downloads/A3519987/A3519987_H9.1_Institutional_diagnostic_and_reform_pathway.docx",
+    "sha256": "a0f5a520ff49c01d5654ca4170ca0cff3ff823b8898df00e6f8a3588776acbc7",
+    "kind": "handout",
+    "source": "A3519987_Materials/Exercise_Handouts/A3519987_H9.1_Institutional_diagnostic_and_reform_pathway.docx"
+  },
+  {
+    "path": "protected/A3519987_R1_RESERVE_Evidence_pack_and_options_note.docx.enc",
+    "sha256": "d3d7532b9ead8b2bc58ec9a3ce0416990c46a9668e89aea426695aba94ba0031",
+    "kind": "reserve",
+    "source": "A3519987_Materials/Exercise_Handouts/A3519987_R1_RESERVE_Evidence_pack_and_options_note.docx"
+  },
+  {
+    "path": "protected/A3519987_R2_RESERVE_Mechanism_design_sheet.docx.enc",
+    "sha256": "ae5726f6ba745d04eb88502527ed3687c8e0a73a75a6d9efe2230902130c0213",
+    "kind": "reserve",
+    "source": "A3519987_Materials/Exercise_Handouts/A3519987_R2_RESERVE_Mechanism_design_sheet.docx"
+  },
+  {
+    "path": "protected/A3519987_S01_Opening_and_role_of_TSDIs.pptx.enc",
+    "sha256": "66be94d77399816433ce60d0b0db038147d97a52334596bb63c0545cc5f832b5",
+    "kind": "slides",
+    "source": "A3519987_Materials/Slide_Decks/A3519987_S01_Opening_and_role_of_TSDIs.pptx"
+  },
+  {
+    "path": "protected/A3519987_S02_Mapping_the_institutional_landscape.pptx.enc",
+    "sha256": "dfc9a304311a925a88ae0ebc57910648def41dc5bef7b653eff03d8a2460a40f",
+    "kind": "slides",
+    "source": "A3519987_Materials/Slide_Decks/A3519987_S02_Mapping_the_institutional_landscape.pptx"
+  },
+  {
+    "path": "protected/A3519987_S03_Comparative_experience.pptx.enc",
+    "sha256": "fbdb32024617854c548cf6c5ae5690c5e33bfed49a3336ba119fb7564f460264",
+    "kind": "slides",
+    "source": "A3519987_Materials/Slide_Decks/A3519987_S03_Comparative_experience.pptx"
+  },
+  {
+    "path": "protected/A3519987_S04_Rapport_building_and_role_play.pptx.enc",
+    "sha256": "1a13617aafe1771a437b8ee7505229e12c43d5c67e576c1642685cc2eca693ee",
+    "kind": "slides",
+    "source": "A3519987_Materials/Slide_Decks/A3519987_S04_Rapport_building_and_role_play.pptx"
+  },
+  {
+    "path": "protected/A3519987_S05_Inclusive_policy_design_part_one.pptx.enc",
+    "sha256": "ebd2aef23da37612aa71dace5021ded1597e5b643086267ff1944b7248d2d426",
+    "kind": "slides",
+    "source": "A3519987_Materials/Slide_Decks/A3519987_S05_Inclusive_policy_design_part_one.pptx"
+  },
+  {
+    "path": "protected/A3519987_S06_Wage_policy_and_wage_setting.pptx.enc",
+    "sha256": "93d5e3b1865c736e3359775a18c9f86575eaf7768757362216281a852b280846",
+    "kind": "slides",
+    "source": "A3519987_Materials/Slide_Decks/A3519987_S06_Wage_policy_and_wage_setting.pptx"
+  },
+  {
+    "path": "protected/A3519987_S07_Implementation_frameworks.pptx.enc",
+    "sha256": "573bfb2d3979f9cd201389f41c03a06003024cf06cd334e7c17cda4a04ca6003",
+    "kind": "slides",
+    "source": "A3519987_Materials/Slide_Decks/A3519987_S07_Implementation_frameworks.pptx"
+  },
+  {
+    "path": "protected/A3519987_S08_Monitoring_and_follow_up.pptx.enc",
+    "sha256": "ba146cb673868df63c2f9a4d417a08f67bc2466455bccaee7eb466a43f5501c8",
+    "kind": "slides",
+    "source": "A3519987_Materials/Slide_Decks/A3519987_S08_Monitoring_and_follow_up.pptx"
+  },
+  {
+    "path": "protected/A3519987_S09_Institutional_change_and_reform.pptx.enc",
+    "sha256": "58c8562f45c9454c33961b5dfe3db4a98875079547f8d447790d794967c8128d",
+    "kind": "slides",
+    "source": "A3519987_Materials/Slide_Decks/A3519987_S09_Institutional_change_and_reform.pptx"
+  },
+  {
+    "path": "protected/A3519987_S10_Working_groups_part_one.pptx.enc",
+    "sha256": "dbd438d2fc9da00dc52d0a1ebaba0623a1c6bd5fc642356e23eb63b0d163c476",
+    "kind": "slides",
+    "source": "A3519987_Materials/Slide_Decks/A3519987_S10_Working_groups_part_one.pptx"
+  },
+  {
+    "path": "protected/A3519987_S11_Working_groups_part_two.pptx.enc",
+    "sha256": "80b72879b45c2ca193784943408925bfdd35d0486572d79c85c41d1845b53ee9",
+    "kind": "slides",
+    "source": "A3519987_Materials/Slide_Decks/A3519987_S11_Working_groups_part_two.pptx"
+  },
+  {
+    "path": "protected/A3519987_S12_Plenary_consolidation_and_way_forward.pptx.enc",
+    "sha256": "2797540ae40bcf112bb0d968c9e99c01cb7be869339c76825fffdc513cd9be39",
+    "kind": "slides",
+    "source": "A3519987_Materials/Slide_Decks/A3519987_S12_Plenary_consolidation_and_way_forward.pptx"
+  },
+  {
+    "path": "protected/A3519987_S01_Opening_and_role_of_TSDIs_Trainer_Script.docx.enc",
+    "sha256": "2d8df58f7a83f75dd0db7fc9ab27146dce15014821be3700c607fc7480f1b533",
+    "kind": "script",
+    "source": "A3519987_Materials/Trainer_Scripts/A3519987_S01_Opening_and_role_of_TSDIs_Trainer_Script.docx"
+  },
+  {
+    "path": "protected/A3519987_S02_Mapping_the_institutional_landscape_Trainer_Script.docx.enc",
+    "sha256": "a867db27fb318ae64b0aff59d94183e0875238251e26a0a779e1621c5ae10d1b",
+    "kind": "script",
+    "source": "A3519987_Materials/Trainer_Scripts/A3519987_S02_Mapping_the_institutional_landscape_Trainer_Script.docx"
+  },
+  {
+    "path": "protected/A3519987_S03_Comparative_experience_Trainer_Script.docx.enc",
+    "sha256": "e1d38fbb77e9447eed07010d2c3d6ffb848333f07e047afb8d9516ed7c5734ae",
+    "kind": "script",
+    "source": "A3519987_Materials/Trainer_Scripts/A3519987_S03_Comparative_experience_Trainer_Script.docx"
+  },
+  {
+    "path": "protected/A3519987_S04_Rapport_building_and_role_play_Trainer_Script.docx.enc",
+    "sha256": "343f1e0ce1408d903f316da25401eab7bb79661ce80707809e88c2da3fc2a786",
+    "kind": "script",
+    "source": "A3519987_Materials/Trainer_Scripts/A3519987_S04_Rapport_building_and_role_play_Trainer_Script.docx"
+  },
+  {
+    "path": "protected/A3519987_S05_Inclusive_policy_design_part_one_Trainer_Script.docx.enc",
+    "sha256": "ef197f9477d7b4e0e37edd1d9c7a59afaf00cdf115bf6e48d2b81109a11c2d2d",
+    "kind": "script",
+    "source": "A3519987_Materials/Trainer_Scripts/A3519987_S05_Inclusive_policy_design_part_one_Trainer_Script.docx"
+  },
+  {
+    "path": "protected/A3519987_S06_Wage_policy_and_wage_setting_Trainer_Script.docx.enc",
+    "sha256": "daeb9cb1b2dcd00ce00dabf55f7818924e8e12c79a40c619fc68e45ef5f7ec87",
+    "kind": "script",
+    "source": "A3519987_Materials/Trainer_Scripts/A3519987_S06_Wage_policy_and_wage_setting_Trainer_Script.docx"
+  },
+  {
+    "path": "protected/A3519987_S07_Implementation_frameworks_Trainer_Script.docx.enc",
+    "sha256": "49942e44960d65444d4efce5ddc0d88e77866d3e82a1a7a7df85181ef047ff87",
+    "kind": "script",
+    "source": "A3519987_Materials/Trainer_Scripts/A3519987_S07_Implementation_frameworks_Trainer_Script.docx"
+  },
+  {
+    "path": "protected/A3519987_S08_Monitoring_and_follow_up_Trainer_Script.docx.enc",
+    "sha256": "bd7dd224cc75e99d915d96aa8b65b76dc820b021cd47004f3bfc0a98463b86a2",
+    "kind": "script",
+    "source": "A3519987_Materials/Trainer_Scripts/A3519987_S08_Monitoring_and_follow_up_Trainer_Script.docx"
+  },
+  {
+    "path": "protected/A3519987_S09_Institutional_change_and_reform_Trainer_Script.docx.enc",
+    "sha256": "0048768117733802be03621166183bb68dc27b3b9292895aca57ebfb912999e9",
+    "kind": "script",
+    "source": "A3519987_Materials/Trainer_Scripts/A3519987_S09_Institutional_change_and_reform_Trainer_Script.docx"
+  },
+  {
+    "path": "protected/A3519987_S10_Working_groups_part_one_Trainer_Script.docx.enc",
+    "sha256": "62692c09c0608cf82f2781f78f1b20b17be1938dce14b22668429dc56786dc71",
+    "kind": "script",
+    "source": "A3519987_Materials/Trainer_Scripts/A3519987_S10_Working_groups_part_one_Trainer_Script.docx"
+  },
+  {
+    "path": "protected/A3519987_S11_Working_groups_part_two_Trainer_Script.docx.enc",
+    "sha256": "a0a7cdd13913ed3d4b030417b8ac3bead04064b14b4705638d66e790390a8beb",
+    "kind": "script",
+    "source": "A3519987_Materials/Trainer_Scripts/A3519987_S11_Working_groups_part_two_Trainer_Script.docx"
+  },
+  {
+    "path": "protected/A3519987_S12_Plenary_consolidation_and_way_forward_Trainer_Script.docx.enc",
+    "sha256": "e313ca8904ab368aaaf9e2ad033f9b61c06dc22b7bc95662e24c82792b70f4de",
+    "kind": "script",
+    "source": "A3519987_Materials/Trainer_Scripts/A3519987_S12_Plenary_consolidation_and_way_forward_Trainer_Script.docx"
+  },
+  {
+    "path": "downloads/A3519987/A3519987_Participant_Handouts_2026-10-22.zip",
+    "sha256": "63b61ddcf864fd8e3b13534d12c000d4a4ea93c028073d1a64ef5160ca9f3efc",
+    "kind": "pack",
+    "entries": [
+      "A3519987_Agenda_Strengthening_Tripartite_SD_Institutions_Rev.3.docx",
+      "A3519987_H1.1_What_works_and_what_blocks.docx",
+      "A3519987_H10_Proposal_and_action_plan_template.docx",
+      "A3519987_H11_Peer_review_sheet.docx",
+      "A3519987_H12_Plenary_feedback_and_commitment_card.docx",
+      "A3519987_H2.1_Institutional_mapping_sheet.docx",
+      "A3519987_H3.1_Comparative_cases_and_transferability_test.docx",
+      "A3519987_H4.1_Tripartite_meeting_role_play.docx",
+      "A3519987_H4.2_Coordination_protocol_template.docx",
+      "A3519987_H5.1_Inclusion_audit.docx",
+      "A3519987_H6.1_Pre_negotiation_fact_base.docx",
+      "A3519987_H7.1_Conclusions_and_implementation_framework.docx",
+      "A3519987_H8.1_Register_and_indicator_set.docx",
+      "A3519987_H9.1_Institutional_diagnostic_and_reform_pathway.docx"
+    ]
+  },
+  {
+    "path": "downloads/A3519988/A3519988_Agenda_Strengthening_Secretariat_Capacities_Rev.3.1.docx",
+    "sha256": "b0b12f3bcfe68748d9f8a5f76197072a7b3f5ae31a18250c6774884e141dc154",
+    "kind": "agenda",
+    "source": "A3519988_Agenda_Strengthening_Secretariat_Capacities_Rev.3.1.docx"
+  },
+  {
+    "path": "downloads/A3519988/A3519988_H1_Self_assessment_and_outcomes.docx",
+    "sha256": "b66ed56663492bb7e71574f5608fb46e90ceff3514b31d6ac660a81b24240dd2",
+    "kind": "handout",
+    "source": "A3519988_Materials/Exercise_Handouts/A3519988_H1_Self_assessment_and_outcomes.docx"
+  },
+  {
+    "path": "downloads/A3519988/A3519988_H2.1_Conduct_and_ethics_scenarios.docx",
+    "sha256": "ebda59cf073af8ed92dcbc193b3f7dc23344115aa6751881f3d2bc93429be58a",
+    "kind": "handout",
+    "source": "A3519988_Materials/Exercise_Handouts/A3519988_H2.1_Conduct_and_ethics_scenarios.docx"
+  },
+  {
+    "path": "downloads/A3519988/A3519988_H3.1_Meeting_scenarios_agenda_and_notice.docx",
+    "sha256": "68a60a47c35c4fc89342188f1cf1532d148691fbb67a2969a8eb05d7d63e7126",
+    "kind": "handout",
+    "source": "A3519988_Materials/Exercise_Handouts/A3519988_H3.1_Meeting_scenarios_agenda_and_notice.docx"
+  },
+  {
+    "path": "downloads/A3519988/A3519988_H4.1_Minutes_audit_and_action_sheet.docx",
+    "sha256": "9c022ef528629343c8b025eeadc2b74e2f02b7f98724667bb9b1d8903ef5621f",
+    "kind": "handout",
+    "source": "A3519988_Materials/Exercise_Handouts/A3519988_H4.1_Minutes_audit_and_action_sheet.docx"
+  },
+  {
+    "path": "downloads/A3519988/A3519988_H5.1_Reframing_and_neutral_redrafting.docx",
+    "sha256": "64fe2a72db829dae8aec489f85c100624ee25653db91e1c2cb032a4413cbac16",
+    "kind": "handout",
+    "source": "A3519988_Materials/Exercise_Handouts/A3519988_H5.1_Reframing_and_neutral_redrafting.docx"
+  },
+  {
+    "path": "downloads/A3519988/A3519988_H6_Secretariat_templates_pack.docx",
+    "sha256": "c4c948a37e5ce6efab743772ce559594b4026736f1b608fa2f75061ab6cc8720",
+    "kind": "handout",
+    "source": "A3519988_Materials/Exercise_Handouts/A3519988_H6_Secretariat_templates_pack.docx"
+  },
+  {
+    "path": "protected/A3519988_S01_Opening_and_M1_Social_dialogue.pptx.enc",
+    "sha256": "118cf0bc0314e8d5a425620e08f80b8ac0b56e165ed517377331fc630b1515d8",
+    "kind": "slides",
+    "source": "A3519988_Materials/Slide_Decks/A3519988_S01_Opening_and_M1_Social_dialogue.pptx"
+  },
+  {
+    "path": "protected/A3519988_S02_M2_Roles_and_responsibilities.pptx.enc",
+    "sha256": "42b2b5991196d785924d116282155920c509a5eb45196960930634d7001cf772",
+    "kind": "slides",
+    "source": "A3519988_Materials/Slide_Decks/A3519988_S02_M2_Roles_and_responsibilities.pptx"
+  },
+  {
+    "path": "protected/A3519988_S03_M3_Planning_and_organizing_meetings.pptx.enc",
+    "sha256": "d3134c02d49843e281ebde8fc96cd0b976b17920bf11eb5afe702b06b8ea9777",
+    "kind": "slides",
+    "source": "A3519988_Materials/Slide_Decks/A3519988_S03_M3_Planning_and_organizing_meetings.pptx"
+  },
+  {
+    "path": "protected/A3519988_S04_M4_Documentation_and_record_keeping.pptx.enc",
+    "sha256": "aa69fa8e3335a5be4f1c755f711f55a9a95096e2a194773cb8fde4dc1b3b9e56",
+    "kind": "slides",
+    "source": "A3519988_Materials/Slide_Decks/A3519988_S04_M4_Documentation_and_record_keeping.pptx"
+  },
+  {
+    "path": "protected/A3519988_S05_M5_Communication_and_facilitation.pptx.enc",
+    "sha256": "762b7f8bc00309226e4054b48f3aa80cd132373654f74a855b0fa99509263308",
+    "kind": "slides",
+    "source": "A3519988_Materials/Slide_Decks/A3519988_S05_M5_Communication_and_facilitation.pptx"
+  },
+  {
+    "path": "protected/A3519988_S06_M6_Protocol_and_administrative_support.pptx.enc",
+    "sha256": "de5a71d5ad6194858b21a6b48d02c8c3e27eecece598d6b9d7827f89a64413b5",
+    "kind": "slides",
+    "source": "A3519988_Materials/Slide_Decks/A3519988_S06_M6_Protocol_and_administrative_support.pptx"
+  },
+  {
+    "path": "protected/A3519988_S07_M7_Financial_management_and_budgeting.pptx.enc",
+    "sha256": "d7d9ecea51278042b41d8532a252cb2eb9a4eb13e1476104e9343dd3f25fc3ed",
+    "kind": "slides",
+    "source": "A3519988_Materials/Slide_Decks/A3519988_S07_M7_Financial_management_and_budgeting.pptx"
+  },
+  {
+    "path": "protected/A3519988_S08_M8_Technical_and_policy_support.pptx.enc",
+    "sha256": "f386ea6214548a76c2212dea3d1400cd942ba7505ccdf294369423d2b6b98e63",
+    "kind": "slides",
+    "source": "A3519988_Materials/Slide_Decks/A3519988_S08_M8_Technical_and_policy_support.pptx"
+  },
+  {
+    "path": "protected/A3519988_S09_M9_Monitoring_evaluation_and_follow_up.pptx.enc",
+    "sha256": "fcd83dadc423cca82bae03c4dc7b038364590f679a2b8b70576ba65ef74ed7aa",
+    "kind": "slides",
+    "source": "A3519988_Materials/Slide_Decks/A3519988_S09_M9_Monitoring_evaluation_and_follow_up.pptx"
+  },
+  {
+    "path": "protected/A3519988_S10_M10_M11_Institutional_capacity_and_action_planning.pptx.enc",
+    "sha256": "032856e91020256ecb19aa8f2334116aa8e61c336dab89100ebb1c1cb6d1c61d",
+    "kind": "slides",
+    "source": "A3519988_Materials/Slide_Decks/A3519988_S10_M10_M11_Institutional_capacity_and_action_planning.pptx"
+  },
+  {
+    "path": "protected/A3519988_S01_Opening_and_M1_Social_dialogue_Trainer_Script.docx.enc",
+    "sha256": "b1a21ad68f51fa452d3de4579047a89495900187fb7d0f7b41920e0f5a8ccf61",
+    "kind": "script",
+    "source": "A3519988_Materials/Trainer_Scripts/A3519988_S01_Opening_and_M1_Social_dialogue_Trainer_Script.docx"
+  },
+  {
+    "path": "protected/A3519988_S02_M2_Roles_and_responsibilities_Trainer_Script.docx.enc",
+    "sha256": "aae525e7d598c6f204b5db7accfb926cd9c9af435574dfdd1acc32711fafa9e9",
+    "kind": "script",
+    "source": "A3519988_Materials/Trainer_Scripts/A3519988_S02_M2_Roles_and_responsibilities_Trainer_Script.docx"
+  },
+  {
+    "path": "protected/A3519988_S03_M3_Planning_and_organizing_meetings_Trainer_Script.docx.enc",
+    "sha256": "cb5f3d20178b22b43d6975d6cc11978caff91b40268093dedd79788d085eb5fe",
+    "kind": "script",
+    "source": "A3519988_Materials/Trainer_Scripts/A3519988_S03_M3_Planning_and_organizing_meetings_Trainer_Script.docx"
+  },
+  {
+    "path": "protected/A3519988_S04_M4_Documentation_and_record_keeping_Trainer_Script.docx.enc",
+    "sha256": "898a408a0522ee2d2d64e929fc5184c4588b2297a61742b27a641154b31fc205",
+    "kind": "script",
+    "source": "A3519988_Materials/Trainer_Scripts/A3519988_S04_M4_Documentation_and_record_keeping_Trainer_Script.docx"
+  },
+  {
+    "path": "protected/A3519988_S05_M5_Communication_and_facilitation_Trainer_Script.docx.enc",
+    "sha256": "f76e1db6656498ba3be6b1122b228f0b760d79224aa29e550faa0d9ab3c377f4",
+    "kind": "script",
+    "source": "A3519988_Materials/Trainer_Scripts/A3519988_S05_M5_Communication_and_facilitation_Trainer_Script.docx"
+  },
+  {
+    "path": "protected/A3519988_S06_M6_Protocol_and_administrative_support_Trainer_Script.docx.enc",
+    "sha256": "2ae595ec2f873bfc275b01b6a34c6dbb14974b3a4639555891953fb27eb67eea",
+    "kind": "script",
+    "source": "A3519988_Materials/Trainer_Scripts/A3519988_S06_M6_Protocol_and_administrative_support_Trainer_Script.docx"
+  },
+  {
+    "path": "protected/A3519988_S07_M7_Financial_management_and_budgeting_Trainer_Script.docx.enc",
+    "sha256": "43f59f9839763fe4d85de506856383ad053b396360dea9ccc7862385866fa674",
+    "kind": "script",
+    "source": "A3519988_Materials/Trainer_Scripts/A3519988_S07_M7_Financial_management_and_budgeting_Trainer_Script.docx"
+  },
+  {
+    "path": "protected/A3519988_S08_M8_Technical_and_policy_support_Trainer_Script.docx.enc",
+    "sha256": "43be22d88643d284404525fab9730c9f5270e18a8d4225c507762630d1ec61ce",
+    "kind": "script",
+    "source": "A3519988_Materials/Trainer_Scripts/A3519988_S08_M8_Technical_and_policy_support_Trainer_Script.docx"
+  },
+  {
+    "path": "protected/A3519988_S09_M9_Monitoring_evaluation_and_follow_up_Trainer_Script.docx.enc",
+    "sha256": "a95a3275e37f02fd9020c0ad9bb8413ba4ec93bf24d9d5189d34a2d4f6c46e29",
+    "kind": "script",
+    "source": "A3519988_Materials/Trainer_Scripts/A3519988_S09_M9_Monitoring_evaluation_and_follow_up_Trainer_Script.docx"
+  },
+  {
+    "path": "protected/A3519988_S10_M10_M11_Institutional_capacity_and_action_planning_Trainer_Script.docx.enc",
+    "sha256": "ae09de1eec65409b14f98b399470fd602e75d8e10463cd257085bb3bf89ec13d",
+    "kind": "script",
+    "source": "A3519988_Materials/Trainer_Scripts/A3519988_S10_M10_M11_Institutional_capacity_and_action_planning_Trainer_Script.docx"
+  },
+  {
+    "path": "downloads/A3519988/A3519988_Participant_Handouts_2026-10-22.zip",
+    "sha256": "b72db66ef9dfb7cc60732db272bd5137bc6945dd9b848f2a11b74cb2100aed93",
+    "kind": "pack",
+    "entries": [
+      "A3519988_Agenda_Strengthening_Secretariat_Capacities_Rev.3.1.docx",
+      "A3519988_H1_Self_assessment_and_outcomes.docx",
+      "A3519988_H2.1_Conduct_and_ethics_scenarios.docx",
+      "A3519988_H3.1_Meeting_scenarios_agenda_and_notice.docx",
+      "A3519988_H4.1_Minutes_audit_and_action_sheet.docx",
+      "A3519988_H5.1_Reframing_and_neutral_redrafting.docx",
+      "A3519988_H6_Secretariat_templates_pack.docx"
+    ]
+  }
+]

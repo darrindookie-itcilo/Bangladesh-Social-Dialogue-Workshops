@@ -1,70 +1,57 @@
-# Bangladesh social dialogue workshops · 2026
+# Bangladesh Social Dialogue Workshops
 
-[Open the published dashboard](https://darrindookie-itcilo.github.io/Bangladesh-Social-Dialogue-Workshops/) · [Publication workflow](https://github.com/darrindookie-itcilo/Bangladesh-Social-Dialogue-Workshops/actions)
+[Open the dashboard](https://darrindookie-itcilo.github.io/Bangladesh-Social-Dialogue-Workshops/)
 
-A combined ITCILO dashboard with separate programmes for:
+Updated from the materials supplied on **22 October 2026**. GitHub Actions publishes `dist/` to GitHub Pages. The website itself has no build step or runtime dependencies.
 
-1. **A3519987** — Strengthening Tripartite Social Dialogue Institutions: From Policy Design to Effective Implementation and Institutional Transformation. Dhaka, **26–29 October 2026**, three and a half days.
-2. **A3519988** — Strengthening the Capacities of the Secretariats of Tripartite Social Dialogue Institutions in Bangladesh. Dhaka, **30 October–1 November 2026**, two and a half days.
+## Current programmes and materials
 
-The exact venue and session leads remain unconfirmed in the supplied revised agendas. Both workshops finish at 12:30 on their final day. All session times are Dhaka time (UTC+6).
+- **A3519987 · Tripartite institutions · 26–29 October:** 12 sessions. Tuesday 27 October morning is reserved for the Bangladesh Labour Rules meeting; course sessions resume at 13:30. Thursday is a half day.
+- **A3519988 · Secretariat capacities · 30 October–1 November:** 10 sessions; Sunday is a half day.
+- Only the separately attached **Rev.3** and **Rev.3.1** agendas are used. Agenda files inside the materials ZIPs are excluded. Original agenda bytes are preserved; the supplied documents’ internal cover headings still say “Revision 2”.
+- The activity desk contains **19 current participant handouts**, editable Word downloads, readable previews and two refreshed participant ZIPs. The previous handout set and Rev.1 packs/agendas are removed from the published tree.
+- The updated secretariat toolkit contains **eight templates**, including an annual budget template. It is available throughout that workshop. Separate activity sheets referenced for Modules 6–11 were not included in the supplied ZIP; the dashboard states this.
+- Facilitator access contains **22 current slide decks, 22 matching trainer scripts and two reserve sheets**. Reserve sheets are optional facilitator material, not scheduled participant downloads.
 
-## Dashboard
+## Six learning games
 
-The static website is in `dist/`. It has no build step or JavaScript dependencies. The dashboard includes the two Rev.1 programmes, 24 sessions, 20 individually downloadable participant handouts, two handout packs, calendar exports, the shared reference library, separate personal notebooks and planning spaces, and a locked facilitator workspace.
+The original **Call It What It Is** retains the Kenya scenarios, feedback and scoring. Five original Bangladesh workshop challenges add 32 rounds using single choices, pairs and sequencing:
 
-**Only the separately supplied Rev.1 agendas are used.** The superseded agendas in the source ZIPs are excluded from the website and participant packs. The supplied emails, technical proposal and brand guideline PDFs are not published.
+| Game | Best used for |
+| --- | --- |
+| Rapport Relay | Listening, reframing and maintaining rapport |
+| Inclusion Detective | Gender, informality, wage evidence and policy reach |
+| Secretariat Sprint | Meeting planning, fair information, minutes, budgeting and technical support |
+| Decision to Delivery | Assigned commitments, indicators, follow-up and reform pathways |
+| Action Plan Rescue | Drafting, peer review, 30-day improvements and institutional roadmaps |
 
-The primary ITCILO logo is retained intact on white at the upper right. The interface uses the guide's blue `#284B96`, cyan `#00A3E0`, and Noto Sans. Font license: `dist/assets/fonts/OFL.txt`.
+The programme and game desk recommend games for every workshop day. All scenarios and numerical examples are fictional training material. Practice needs no session code. New challenges award 10 points per fully correct round; two-choice rounds award 5 points for each correct choice. Right/wrong totals count whole rounds, so a partial round counts as wrong. The original game counts correct form classifications separately from its setting and keyword bonus points.
 
-## Run locally
+## Run a live competition
 
-From the repository root:
+1. Unlock **Facilitator view** using the existing workshop credentials; select the workshop and **Live team board**.
+2. Choose a game and label, then create a session. Share its eight-character code or join link.
+3. Each team opens the selected game on one shared device, chooses the same workshop and enters a distinct alias and the code.
+4. Watch each team’s question/section, answered count, right/wrong totals, points, elapsed time and last activity. The board polls every 2.5 seconds and flags a stale connection.
+5. Reset one team or all teams in that session. A confirmation describes what clears. Connected team devices return to question one; stale updates from the prior attempt are rejected.
 
-```sh
-python3 -m http.server 8000 --directory dist
-```
+The facilitator can hide scores, project the board, export CSV results, close a session to new teams or reopen it. Closing entry does not stop teams already joined. The timer and local result-code board remain available as an offline classroom fallback for the original game.
 
-Open `http://localhost:8000/`. Use a server, rather than opening the HTML as a local file, for facilitator unlocking and encrypted downloads. Decryption requires a secure context: HTTPS when hosted, or localhost during development.
+Live competition uses a dedicated Bangladesh API namespace on the existing workshop service:
+`https://platform-grievance-india.darrin-dookie.chatgpt.site/api/bangladesh/race`
 
-## GitHub Pages
+Sessions and team progress are stored in D1 with separate Bangladesh tables. The server verifies submitted choices, computes scores, locks submitted answers and scopes all controls to their session. It does not trust a participant-supplied score. Teams use independent random bearer tokens; only their hashes are stored. Facilitator login is checked on the server, rate limited and valid for 90 minutes. Facilitator tokens stay in tab memory and are revoked on sign-out. Existing Kenya and India features retain their access protections and data.
 
-The included `.github/workflows/pages.yml` deploys `dist/` when `main` changes. In the repository's **Settings → Pages**, select **GitHub Actions** as the source, then run the publication workflow if needed. There is no package install or build step.
+## Access and references
 
-All links are relative and work under a GitHub Pages repository subpath. Keep the complete `dist/` tree together.
+Teaching documents and previews use AES-256-GCM encryption with a key derived using PBKDF2-SHA-256 (600,000 iterations) from both username and password. Shared encrypted parts reconstruct the exact original Office files. Neither the login identifier nor password is hardcoded in the public interface. Plaintext teaching files are not published. Refreshing the page, signing out or reaching 90 minutes locks the view again.
 
-## Facilitation
+Participant notebooks are separate per workshop and saved only in the participant’s browser. Export before changing devices or clearing browser data.
 
-Open **Facilitator view** and use the workshop credentials supplied separately. The password is not stored in the repository. The username and password together derive an AES-256-GCM decryption key using PBKDF2-SHA-256 with 600,000 iterations and a random salt. The 24 slide decks, 24 trainer scripts and trainer reading previews are encrypted at rest. None of these original trainer files is published as a plaintext download. The slide decks include speaker notes.
+ILO Conventions, including C98, link to official ILO webpages. An automatic review rejected re-uploading the old NSDF translation PDF; it is excluded from this revision. Its reference card now offers the current mapping worksheet and the official Bangladesh Government Press Gazette archive. The archive is a search portal, not a verified notification.
 
-The decryption key exists only in tab memory. Refresh, sign out or the 90-minute session check locks the view. This is password-based unlocking of encrypted teaching materials; it is not an online account service or a mechanism for managing participant identities. Participant handouts and the copied game's scenarios and feedback are public teaching resources. Teaching files share small encrypted storage parts; downloads reconstruct each original file exactly. Keep `dist/protected/parts/`, `recipes.enc` and `manifest.enc` together.
+## Checks and maintenance
 
-The facilitator workspace includes a discussion timer, a projector timer, and separate local game-result boards for the workshops. Set the discussion duration, start or pause, add 30 seconds, or reset. The timer never prevents the game from continuing.
+`npm ci` installs the development-only DOM test dependency. `npm test` prompts securely for the facilitator username and password; it never writes it to a file. `tools/verify_materials.py` verifies source bytes, participant-pack contents, all 46 protected files and wrong-password rejection. `tools/refresh_materials.py` refreshes the training set from the original attachments; it deliberately excludes ZIP agendas and keeps reserve sheets locked.
 
-## Call It What It Is
-
-This duplicates the current Kenya game. Its twelve fictional public-health, higher-education and national scenarios, scoring functions and explanations are preserved. The Bangladesh edition has its own local practice save key. One device per team is recommended. Team and individual practice are available.
-
-Choose the form, the setting and one useful change. Forms earn 10 points, settings 5, and a recognized change 5, up to 240. Two arguable cases allow alternative classifications. Recognition of a change uses keywords; it is a discussion prompt, not an assessment of the answer's full quality.
-
-At the end, enter each team's six-character result code in **Facilitator view → Timer & game board**. Teams rank by points, then time. Times in result codes are rounded to five seconds. The board saves on that facilitator's device; it does not synchronize across devices or authenticate team-generated scores.
-
-The original live-race connection remains available through the Kenya service. That service requires its own existing sign-in, independently of the Bangladesh materials password. Create a separate live session for each workshop. The existing service retains its Kenya sector categories; game participants' workshop selections use those existing category identifiers for compatibility. The local result-code board shows the Bangladesh workshop directly. No live race was created as part of development testing, and that external service's availability is not guaranteed by this static dashboard.
-
-## Data and downloads
-
-Personal notes, plans, checkmarks and locally entered result codes use browser local storage. Notebooks are separate for the workshops, can be exported as Markdown, and can be backed up or restored together as JSON. They are not sent to the facilitator or an external service. Local storage can be unavailable or cleared by browser settings: export important work.
-
-The original live-race option sends team aliases, choices, timings and scores to the same secure service used by Kenya. Practice does not send results. No participant roster or real private institutional data is included.
-
-Use the Word handouts for original formatting and printing. Dashboard previews show the supplied content in a readable HTML layout. The two participant packs contain the handouts and Rev.1 agenda, not the trainer materials.
-
-For Secretariat Modules 6–11, the supplied files include a seven-template reusable pack. Separate exercise sheets mentioned in the scripts were not included in the uploaded ZIPs. The activity desk states this explicitly.
-
-The NSDF reference is the **unofficial English translation supplied for the workshops**. Consult the authoritative Gazette text for legal interpretation. The reference library links to official ILO texts for Conventions Nos. 87, 98 and 144 rather than republishing local treaty PDFs. No country ratification status is asserted.
-
-## Updating
-
-Edit `dist/data.js` to change programme or handout metadata, `dist/app.js` for behavior and content, and `dist/styles.css` for the interface. Supplied Word documents remain unchanged. Encrypted resources cannot be edited or have their password changed by modifying a login condition: decrypt and re-encrypt the materials with the intended credentials, maintaining the documented file format.
-
-See `VERIFICATION.md` for the checks and verification limits of this version.
+See [VERIFICATION.md](VERIFICATION.md) and `verification/` for the current test and deployment evidence. A simulated DOM test is identified as such; it is not a substitute for the live browser checks.

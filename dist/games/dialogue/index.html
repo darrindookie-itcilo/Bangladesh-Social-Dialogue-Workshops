@@ -143,8 +143,8 @@ details.how dd{margin:2px 0 0; color:var(--ink-2); font-size:14.5px}
 <div class="wrap"><div id="liveStatus" class="note live-status" role="status"></div><div id="app"></div></div>
 <p class="foot">Training material. All twelve scenarios are composite and fictional.<br><a href="../../#games">Workshop dashboard</a> · <a href="../../#facilitator" target="_blank" rel="noopener">Facilitator view</a></p>
 
-<script src="../../race.js?v=3"></script>
-<script src="live.js?v=3"></script>
+<script src="../../race.js?v=20261022"></script>
+<script src="live.js?v=20261022"></script>
 <script>
 "use strict";
 /* ======================================================================
@@ -219,7 +219,7 @@ var PTS_FORM = 10, PTS_SETTING = 5, PTS_MOVE = 5;
 var MAX_SCORE = CARDS.length * (PTS_FORM + PTS_SETTING + PTS_MOVE);   /* 240 */
 
 /* ---------------- state ---------------- */
-var KEY = "bangladesh-dialogue-v1";
+var KEY = "bangladesh-dialogue-v2";
 var S = null;
 var stopControl = null;
 var hudTimer = null;
@@ -234,7 +234,7 @@ function defaultRoom(){
   return "";
 }
 function fresh(){
-  return { screen:"landing", team:"", sector:"health", play:"team", room:defaultRoom(),
+  return { screen:"landing", team:"", sector:new URLSearchParams(location.search).get("w")==="secretariats"?"he":"health", play:"team", room:defaultRoom(),
            i:0, score:0, form:null, setting:null, q3:"", answers:[],
            startedAt:0, finishedAt:0, generation:0, resetNotice:false };
 }
@@ -504,7 +504,7 @@ function viewFinal(){
     '<div class="card">' +
       '<div class="eyebrow">Your result code for the debrief</div>' +
       '<div class="code">' + encode(S.score, ms) + '</div>' +
-      '<p class="note">Share this code with the facilitator to enter on the workshop results board. It records your score and time; it does not submit a live result.</p>' +
+      '<p class="note">In practice, share this code for the offline results board. In a live session, your result is sent automatically; check the connection message before closing this tab.</p>' +
     '</div>' +
     (wrong.length ? '<div class="card"><div class="eyebrow">Worth looking at again</div><table class="miss">' +
       wrong.map(function(w){

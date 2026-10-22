@@ -1,0 +1,11 @@
+{
+  "name": "bangladesh-social-dialogue-dashboard",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "python3 tools/run_tests.py"
+  },
+  "devDependencies": {
+    "jsdom": "26.1.0"
+  }
+}

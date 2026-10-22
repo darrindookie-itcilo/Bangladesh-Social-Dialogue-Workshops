@@ -1,0 +1,621 @@
+{
+  "version": "2026-10-22",
+  "notice": "Original learning games based on the supplied revised agendas and handouts. All scenarios and numerical examples are fictional training material. They do not state Bangladesh law or assess open-ended facilitation skills.",
+  "games": [
+    {
+      "id": "rapport",
+      "title": "Rapport Relay",
+      "strap": "Keep the issue. Lose the attack.",
+      "description": "Rescue a tense tripartite meeting: acknowledge, reframe and ask a question that opens a way forward.",
+      "minutes": 8,
+      "uses": {
+        "institutions": [
+          4
+        ],
+        "secretariats": [
+          5
+        ]
+      },
+      "debrief": [
+        "Which reframe would the original speaker still recognize?",
+        "Try one answer aloud, then invite a partner to improve it."
+      ],
+      "questions": [
+        {
+          "id": "rapport-1",
+          "section": "Listen first",
+          "kind": "single",
+          "prompt": "“The ministry has said ‘under consideration’ for two years. Nobody intends to act.” What is the strongest first response?",
+          "options": [
+            "“Please avoid making accusations.”",
+            "“You want a clear status and a decision date after a long delay.”",
+            "“The ministry is doing its best.”"
+          ],
+          "answer": [
+            1
+          ],
+          "why": "Acknowledge the concern and the delay without endorsing a claim about anyone’s motives. You can then ask for a status, owner and decision date."
+        },
+        {
+          "id": "rapport-2",
+          "section": "Reframe",
+          "kind": "single",
+          "prompt": "“Employers only agreed because they know this will never be enforced.” Choose the neutral reframe.",
+          "options": [
+            "“Employer representatives acted in bad faith.”",
+            "“Everyone agrees enforcement is impossible.”",
+            "“Worker members seek clarity on how the agreement will be implemented and verified.”"
+          ],
+          "answer": [
+            2
+          ],
+          "why": "The reframe preserves the enforceability concern. It removes the claim about motives and does not invent consensus."
+        },
+        {
+          "id": "rapport-3",
+          "section": "Open the discussion",
+          "kind": "single",
+          "prompt": "Two constituencies reject each other’s wage figures. Which question moves the discussion forward?",
+          "options": [
+            "“Which definition and collection period explain the difference between the series?”",
+            "“Can we agree the official number is always correct?”",
+            "“Which side is willing to withdraw its figures?”"
+          ],
+          "answer": [
+            0
+          ],
+          "why": "An open question tests comparability. Record contested series and their methods; do not settle a substantive dispute by choosing a favourite source."
+        },
+        {
+          "id": "rapport-4",
+          "section": "Two useful moves",
+          "kind": "pair",
+          "prompt": "A representative says, “This was decided elsewhere. We are being asked to rubber-stamp it.” Choose TWO useful moves.",
+          "options": [
+            "Ask which parts remain open to influence and record the answer.",
+            "Promise the representative that their proposal will be adopted.",
+            "Paraphrase the concern about meaningful participation and check you understood.",
+            "Remove the objection from the minutes to protect rapport."
+          ],
+          "answer": [
+            0,
+            2
+          ],
+          "why": "Check understanding and clarify the real scope for influence. Rapport does not require a promise of agreement or removal of dissent."
+        },
+        {
+          "id": "rapport-5",
+          "section": "Sequence the response",
+          "kind": "order",
+          "prompt": "Put these facilitation moves in a useful order.",
+          "options": [
+            "Ask a specific open question about a way forward.",
+            "Acknowledge the concern.",
+            "Paraphrase the substance and check understanding."
+          ],
+          "answer": [
+            1,
+            2,
+            0
+          ],
+          "why": "Listening comes first. Check that the speaker recognizes the issue before asking them to work on a possible next step."
+        },
+        {
+          "id": "rapport-6",
+          "section": "Hold the boundary",
+          "kind": "single",
+          "prompt": "A participant threatens non-compliance if a recommendation is adopted. What should the chair’s support team do?",
+          "options": [
+            "Record that there is consensus because no vote was requested.",
+            "Ask what implementation obstacles are anticipated, record the position honestly, and apply the agreed procedure.",
+            "Threaten to remove the constituency from the next meeting."
+          ],
+          "answer": [
+            1
+          ],
+          "why": "Treat the statement as information about implementation and a constituent position. Support the procedure; neither fabricate agreement nor retaliate."
+        }
+      ]
+    },
+    {
+      "id": "inclusion",
+      "title": "Inclusion Detective",
+      "strap": "Find who the policy misses.",
+      "description": "Follow the clues in a fictional wage proposal. Spot hidden barriers and repair the evidence before a decision.",
+      "minutes": 10,
+      "uses": {
+        "institutions": [
+          5,
+          6
+        ],
+        "secretariats": [
+          8
+        ]
+      },
+      "debrief": [
+        "Who disappears when you describe only the average worker?",
+        "Which amendment changes the actual reach of a measure?"
+      ],
+      "questions": [
+        {
+          "id": "inclusion-1",
+          "section": "Reach test",
+          "kind": "single",
+          "prompt": "A simulated benefit is available only to workers who upload a written contract from a registered employer. Which group is most clearly at risk of exclusion?",
+          "options": [
+            "Only workers who earn above the minimum wage.",
+            "Workers without written contracts, including many in informal employment.",
+            "Every member of the tripartite body."
+          ],
+          "answer": [
+            1
+          ],
+          "why": "Eligibility design can stop a measure at formal employment. Identify the actual barrier and an accessible route; do not assume everybody can produce the same documents."
+        },
+        {
+          "id": "inclusion-2",
+          "section": "Equal value",
+          "kind": "single",
+          "prompt": "Two jobs have different titles but may demand comparable skill, responsibility, effort and working conditions. What should a tripartite discussion examine?",
+          "options": [
+            "Pay only within identical job titles.",
+            "An objective job evaluation method for comparing work of equal value.",
+            "The personal negotiating strength of each worker."
+          ],
+          "answer": [
+            1
+          ],
+          "why": "Equal remuneration for work of equal value requires an objective comparison across jobs. A comparison confined to identical titles can miss structural undervaluation."
+        },
+        {
+          "id": "inclusion-3",
+          "section": "Evidence clues",
+          "kind": "pair",
+          "prompt": "A wage brief quotes “2026 data”, but the survey was collected in 2022. Choose TWO repairs.",
+          "options": [
+            "State the collection period and the publication date separately.",
+            "Remove the series because older data are always worthless.",
+            "Explain the definition, limits and any more current comparable evidence.",
+            "Rename the series “current” because the report is new."
+          ],
+          "answer": [
+            0,
+            2
+          ],
+          "why": "Publication date does not make observations current. Keep the period, definition, limitations and comparability visible to all three parties."
+        },
+        {
+          "id": "inclusion-4",
+          "section": "Wage criteria",
+          "kind": "single",
+          "prompt": "Which brief gives the parties a useful common starting point for wage discussion?",
+          "options": [
+            "Only the highest proposed rate, with no sources.",
+            "Only enterprise costs because worker needs are a political question.",
+            "Evidence on worker and family needs and economic factors, with disputed series recorded and the weighting left to the parties."
+          ],
+          "answer": [
+            2
+          ],
+          "why": "The secretariat supports an agreed fact base. The parties decide the weights and the outcome; the brief must not erase either set of considerations."
+        },
+        {
+          "id": "inclusion-5",
+          "section": "An amendment that matters",
+          "kind": "single",
+          "prompt": "The proposal says, “Gender should be considered.” Which replacement changes the mechanism?",
+          "options": [
+            "“Gender is very important.”",
+            "Require data disaggregated by sex and employment status, name who reviews gaps, and specify when a gap triggers corrective action.",
+            "Put the same sentence in a coloured box."
+          ],
+          "answer": [
+            1
+          ],
+          "why": "A real amendment changes data requirements, responsibilities or decisions. If deleting the gender paragraph changes nothing else, the design has not changed."
+        },
+        {
+          "id": "inclusion-6",
+          "section": "Review trigger",
+          "kind": "single",
+          "prompt": "Which clause offers the clearest accountability?",
+          "options": [
+            "“The rate will be reviewed periodically.”",
+            "“Review when all parties are satisfied.”",
+            "“The secretariat will table the agreed evidence brief every 12 months; the body will consider whether revision is needed.”"
+          ],
+          "answer": [
+            2
+          ],
+          "why": "A numerical interval, responsible role and tabled evidence make review predictable. This is a fictional training clause, not a statement of Bangladesh law."
+        }
+      ]
+    },
+    {
+      "id": "secretariat",
+      "title": "Secretariat Sprint",
+      "strap": "Keep the room fair under pressure.",
+      "description": "A fast succession of meeting, protocol, budget and evidence dilemmas. Protect neutrality without stopping the work.",
+      "minutes": 12,
+      "uses": {
+        "institutions": [
+          4,
+          7
+        ],
+        "secretariats": [
+          2,
+          3,
+          4,
+          6,
+          7,
+          8
+        ]
+      },
+      "debrief": [
+        "Which safeguards should be routine rather than depend on personal courage?",
+        "Choose one decision to turn into a written operating procedure."
+      ],
+      "questions": [
+        {
+          "id": "secretariat-1",
+          "section": "Before the meeting",
+          "kind": "single",
+          "prompt": "One constituency receives a revised paper privately the night before a meeting. What is the strongest response?",
+          "options": [
+            "Circulate the same version to all constituencies, record dispatch, and flag whether there is enough time for meaningful consideration.",
+            "Ask that constituency to explain it to the others at the table.",
+            "Keep the paper off the dispatch log."
+          ],
+          "answer": [
+            0
+          ],
+          "why": "Equal access means the same document and a fair chance to prepare. A dispatch log should show recipient, version, time and channel."
+        },
+        {
+          "id": "secretariat-2",
+          "section": "Agenda rescue",
+          "kind": "pair",
+          "prompt": "An agenda item reads “Wage paper — discussion”. Choose TWO additions that make it usable.",
+          "options": [
+            "The purpose and decision, if any, being sought.",
+            "A secretariat instruction that one constituency must concede.",
+            "The supporting document, version and circulation deadline.",
+            "A promise that the meeting will reach consensus."
+          ],
+          "answer": [
+            0,
+            2
+          ],
+          "why": "A clear purpose and advance documents make participation predictable. The secretariat cannot promise or prescribe a substantive agreement."
+        },
+        {
+          "id": "secretariat-3",
+          "section": "Honest minutes",
+          "kind": "single",
+          "prompt": "Two provisions were agreed; one remains contested. How should the record present the outcome?",
+          "options": [
+            "Use “broad consensus” for all three to protect relationships.",
+            "Record agreed provisions separately and attribute the unresolved positions fairly in the parties’ own terms.",
+            "Leave the contested provision out of the record."
+          ],
+          "answer": [
+            1
+          ],
+          "why": "An honest record distinguishes agreement from disagreement. It preserves the substance of each position and supports a real next step."
+        },
+        {
+          "id": "secretariat-4",
+          "section": "Chair briefing",
+          "kind": "single",
+          "prompt": "Which sentence belongs in a neutral chair briefing?",
+          "options": [
+            "“The Chair should push workers to accept option B.”",
+            "“The employers’ concern is obviously the reasonable one.”",
+            "“The procedure requires advance circulation; the revised paper was sent yesterday, and members may raise the preparation time.”"
+          ],
+          "answer": [
+            2
+          ],
+          "why": "Brief the chair on facts, procedure and likely issues. Do not use technical support to recommend that one party’s substantive position prevail."
+        },
+        {
+          "id": "secretariat-5",
+          "section": "Budget ceiling",
+          "kind": "single",
+          "prompt": "SIMULATED: last year’s budget was 1,000 units. The maximum increase is 10%. What is the new ceiling?",
+          "options": [
+            "1,010 units.",
+            "1,100 units.",
+            "1,200 units."
+          ],
+          "answer": [
+            1
+          ],
+          "why": "Ten percent of 1,000 is 100. The ceiling is 1,100 fictional units. Explain priorities and trade-offs within that envelope; these are not national budget figures."
+        },
+        {
+          "id": "secretariat-6",
+          "section": "Audit pressure",
+          "kind": "single",
+          "prompt": "An allowance lacks supporting documentation. The meeting is tomorrow and someone asks you to backdate a receipt. Choose the proper response.",
+          "options": [
+            "Backdate it so the meeting can proceed.",
+            "Refuse to fabricate evidence, record the gap and use the authorized approval or escalation process.",
+            "Delete the expenditure from the records."
+          ],
+          "answer": [
+            1
+          ],
+          "why": "A complete record includes unresolved gaps. Neither urgency nor a meeting deadline justifies inventing supporting documents."
+        },
+        {
+          "id": "secretariat-7",
+          "section": "Fact-base relay",
+          "kind": "order",
+          "prompt": "Sequence the preparation of a shared wage evidence brief.",
+          "options": [
+            "Circulate the identical, versioned brief to all constituencies.",
+            "Check definitions, collection periods and coverage.",
+            "Record material disagreements and limits in the brief."
+          ],
+          "answer": [
+            1,
+            2,
+            0
+          ],
+          "why": "Validate the evidence first, disclose material differences, then circulate a common brief. A shared fact base is not a secretariat decision on the wage outcome."
+        },
+        {
+          "id": "secretariat-8",
+          "section": "Institutional memory",
+          "kind": "single",
+          "prompt": "A staff member rotates out next week. Which action best protects continuity?",
+          "options": [
+            "Keep the files in that person’s private email because they know the history.",
+            "Send only the most recent minutes and discard earlier versions.",
+            "Handover a controlled meeting file, access permissions, version history, action register and named custodian."
+          ],
+          "answer": [
+            2
+          ],
+          "why": "Institutional memory requires accessible records and responsibilities. Access should follow roles, with confidentiality and retention rules respected."
+        }
+      ]
+    },
+    {
+      "id": "delivery",
+      "title": "Decision to Delivery",
+      "strap": "Turn the minutes into movement.",
+      "description": "Repair weak commitments, choose useful indicators and rescue blocked actions before the next meeting.",
+      "minutes": 10,
+      "uses": {
+        "institutions": [
+          7,
+          8,
+          9
+        ],
+        "secretariats": [
+          4,
+          9
+        ]
+      },
+      "debrief": [
+        "Which field makes a commitment verifiable?",
+        "What should return to the agenda for decision, rather than disappear in a status report?"
+      ],
+      "questions": [
+        {
+          "id": "delivery-1",
+          "section": "Repair the conclusion",
+          "kind": "single",
+          "prompt": "The minutes say, “Stakeholders will improve coordination soon.” Which version can be followed up?",
+          "options": [
+            "“Everyone will make their best efforts.”",
+            "“The designated secretariat officer will circulate a draft referral protocol by 30 November, with feedback due in ten working days.”",
+            "“Coordination is a priority for the future.”"
+          ],
+          "answer": [
+            1
+          ],
+          "why": "Name a responsible role, an output and a date. The date and role here are fictional; adapt them to the real body’s authority and resources."
+        },
+        {
+          "id": "delivery-2",
+          "section": "Two missing links",
+          "kind": "pair",
+          "prompt": "An action has an owner and deadline but no delivery evidence or resources. Choose TWO additions.",
+          "options": [
+            "What completed output will be checked and by whom.",
+            "A label saying “urgent” in red.",
+            "The cost or staff time and who will provide it.",
+            "An assurance that no monitoring is needed."
+          ],
+          "answer": [
+            0,
+            2
+          ],
+          "why": "An assigned action still needs a verification method and a resource basis. Urgency is not a substitute for feasibility."
+        },
+        {
+          "id": "delivery-3",
+          "section": "A useful status",
+          "kind": "single",
+          "prompt": "Which register entry tells the body something it can act on?",
+          "options": [
+            "“Ongoing.”",
+            "“Progressing well.”",
+            "“Blocked: responsible unit has no approved allocation; decision on funding requested at the next meeting.”"
+          ],
+          "answer": [
+            2
+          ],
+          "why": "A status should expose the obstacle, the responsible route and the required decision. A generic “ongoing” entry can hide years of inaction."
+        },
+        {
+          "id": "delivery-4",
+          "section": "The tabling method",
+          "kind": "order",
+          "prompt": "Put the follow-up cycle in order.",
+          "options": [
+            "Table overdue or blocked items that need a decision.",
+            "Ask each action owner for a dated status and evidence before the meeting.",
+            "Update the register and carry open actions forward with their original dates."
+          ],
+          "answer": [
+            1,
+            0,
+            2
+          ],
+          "why": "Obtain a status before the meeting, table exceptions for decisions, then update the continuous register. Do not reset the original date to hide delay."
+        },
+        {
+          "id": "delivery-5",
+          "section": "Indicator detective",
+          "kind": "single",
+          "prompt": "Which indicator best tests whether agreed actions are being implemented on time?",
+          "options": [
+            "Number of chairs in the meeting room.",
+            "Share of actions due in the period completed by their agreed deadlines, with verification and a stated denominator.",
+            "Total words in the minutes."
+          ],
+          "answer": [
+            1
+          ],
+          "why": "The denominator and time period make the measure interpretable. Pair delivery indicators with meaningful inclusion or outcome measures; volume alone does not show effectiveness."
+        },
+        {
+          "id": "delivery-6",
+          "section": "Reform pathway",
+          "kind": "single",
+          "prompt": "The mandate permits referral, but papers keep getting lost between two secretariats. What is a sensible first step?",
+          "options": [
+            "Assume a new law is always required before changing a filing practice.",
+            "Diagnose the handover failure, agree a practical referral log and named custodians, and identify separately any change needing a formal instrument.",
+            "Create a new body before checking the existing process."
+          ],
+          "answer": [
+            1
+          ],
+          "why": "Separate failures of practice, capacity and legal authority. Start with changes within the body’s control while documenting any formal reform needed."
+        }
+      ]
+    },
+    {
+      "id": "action",
+      "title": "Action Plan Rescue",
+      "strap": "Make the final presentation count.",
+      "description": "A peer-review mission: repair an action plan so another team can tell who will do what, when and with what evidence.",
+      "minutes": 8,
+      "uses": {
+        "institutions": [
+          10,
+          11,
+          12
+        ],
+        "secretariats": [
+          10
+        ]
+      },
+      "debrief": [
+        "Which improvement could your own role begin within 30 days?",
+        "What specific response will you ask the plenary for?"
+      ],
+      "questions": [
+        {
+          "id": "action-1",
+          "section": "Owner rescue",
+          "kind": "single",
+          "prompt": "An action plan names “the ministry and social partners” as the owner. What does it need?",
+          "options": [
+            "A longer list of institutions.",
+            "A responsible post for the next output, a coordinating role and the other contributors’ commitments.",
+            "The name of the group that made the slide."
+          ],
+          "answer": [
+            1
+          ],
+          "why": "A named post makes follow-up possible when individuals change. Distinguish who coordinates from who decides, supplies evidence or implements."
+        },
+        {
+          "id": "action-2",
+          "section": "A quick win",
+          "kind": "single",
+          "prompt": "Which improvement fits an individual 30-day plan for a secretariat officer?",
+          "options": [
+            "Secure a major legislative amendment by yourself.",
+            "Promise a national wage increase.",
+            "Start a versioned dispatch log within your authority, with a date and a check that every constituency receives the same papers."
+          ],
+          "answer": [
+            2
+          ],
+          "why": "A quick win is something you can actually do within your role. Larger reforms may belong in the institutional roadmap with the required approvals."
+        },
+        {
+          "id": "action-3",
+          "section": "Peer-review pair",
+          "kind": "pair",
+          "prompt": "Choose TWO questions a peer-review team should ask before endorsing an action plan.",
+          "options": [
+            "Is the first step within the responsible body’s mandate and resources?",
+            "Are there enough decorative graphics?",
+            "What observable evidence will show the action is complete, and by what date?",
+            "Can all unresolved disagreements be hidden?"
+          ],
+          "answer": [
+            0,
+            2
+          ],
+          "why": "Peer review tests feasibility and verification. A clear unresolved issue is more useful than an attractive but unimplementable promise."
+        },
+        {
+          "id": "action-4",
+          "section": "Record the unknown",
+          "kind": "single",
+          "prompt": "The group cannot establish the number of affected informal workers. What should the proposal say?",
+          "options": [
+            "Invent a plausible number to keep the presentation moving.",
+            "Record the unknown, the source and responsible role for obtaining it, and the decision that depends on it.",
+            "Remove informal workers from the scope without explanation."
+          ],
+          "answer": [
+            1
+          ],
+          "why": "A documented unknown with an evidence plan is a legitimate output. Do not turn a simulated assumption into a national fact."
+        },
+        {
+          "id": "action-5",
+          "section": "Sequence a roadmap",
+          "kind": "order",
+          "prompt": "Put the three-month improvement pathway in a sensible order.",
+          "options": [
+            "Build continuity: check the process is used, review gaps and handover responsibilities.",
+            "Establish a basic dispatch log and action register with responsible roles.",
+            "Use the records to produce consistent neutral briefs and follow-up reports."
+          ],
+          "answer": [
+            1,
+            2,
+            0
+          ],
+          "why": "Build the foundation, use it consistently, and then check sustainability. A roadmap should name real deliverables, roles and dates."
+        },
+        {
+          "id": "action-6",
+          "section": "The plenary ask",
+          "kind": "single",
+          "prompt": "The group ends, “Thank you for listening.” What would make the presentation more useful?",
+          "options": [
+            "A request for a specific endorsement, commitment, factual answer or decision on ownership, with a next step recorded.",
+            "A claim that silence means every institution has committed.",
+            "A promise that every proposal will be implemented immediately."
+          ],
+          "answer": [
+            0
+          ],
+          "why": "Be explicit about what you need from the room. Record the actual response and next step, including any disagreement or missing authority."
+        }
+      ]
+    }
+  ]
+}
