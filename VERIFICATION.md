@@ -1,23 +1,26 @@
-# Verification — 22 October 2026 refresh
+# Verification — 23 October 2026 review fixes
 
-## Verified before the Pages revision
+## This revision
 
-- Both programme datasets follow the separately attached Rev.3 and Rev.3.1 agendas: 12 institutions sessions and 10 secretariat sessions. Tuesday morning 27 October is an external meeting, with course Session 5 at 13:30.
-- Both published agenda files match the attached originals byte for byte.
-- All 19 participant Word handouts match the new ZIP sources. Both participant packs contain only those handouts and the correct separately attached agenda. No trainer documents, reserve sheets or reference PDFs are included in those packs.
-- All 46 protected files reconstruct to their original source bytes: 22 slide decks, 22 trainer scripts and two reserve sheets. A wrong password is rejected. The HTML script previews remain encrypted.
-- Seven simulated-DOM interface tests passed: both programmes, all session activity mappings, previews, wrong/correct facilitator access, all 46 download buttons, sign-out, live-board request handling, independent team-token allocation, all 32 new game rounds and result exports, and notebook separation.
-- The competition service passed 32 automated tests, its TypeScript check and a production build. These include team isolation, server scoring, immutable answers, per-team/all-team reset, stale-update rejection, CORS, workshop/game matching, rate limiting, session expiry, logout and preservation of the existing Kenya game rules.
-- The competition service deployment succeeded at version 12, source `7ad6f25c1717c501dae86975d819930fac3fdbda`, deployment `appgdep_6ada5a16eb28819187ca06a7bb2ffae0`.
+- Applied the attached answer-display shuffling, readable connection/session-code errors, labelled daily recommendations and eight-round mandate challenge.
+- All 40 challenge questions are identical between the participant bank and the competition service. Server grading still receives original bank indices.
+- The competition service now accepts `mandate` sessions and grades all eight rounds. Version 13 deployed successfully from source `74876c89d9f1b05bde6010c8999c9363a116df3a`, deployment `appgdep_6adb6f1492c88191a93ba6dd9b1aefe4`.
+- Replaced the twelve dialogue scenarios with fictional Bangladesh workshop situations. All original form/setting answers, both acceptable alternatives and scoring rules are preserved.
+- Full-text handout search includes session themes and budget/cost/resource terms. Clearing filters also works when the current route is unchanged.
+- Corrected agenda revision headings, restored a preparation row with unconfirmed arrangements, and marked missing session leads as to be confirmed. The supplied session timetable and content are unchanged. Both participant packs include the corrected agendas. All six rendered agenda pages were visually inspected.
 
-## Review handling
+## Automated checks
 
-Automatic review rejected re-uploading `dist/downloads/NSDF_Unofficial_English_Translation.pdf`, stating that it appeared nonpublic and conflicted with the earlier request to use a webpage instead of a PDF. The rejected upload was not retried. This revision removes that old PDF and replaces its reference card with the current mapping worksheet and the official Gazette archive webpage. The C98 link remains the official ILO webpage.
+- All 11 dashboard DOM/integrity tests passed, including every session mapping, all 40 challenge rounds, game counts, search and clear filters, independent team tokens, offline/code errors, notebook separation and protected materials.
+- All 46 protected downloads reconstructed to their recorded SHA-256 hashes. Wrong-password rejection and lock-on-sign-out passed. Their encrypted files were not changed in this revision.
+- All 19 participant handouts retain their recorded hashes. Updated agendas and packs match the refreshed integrity manifest; original agenda hashes remain recorded as `sourceSha256`.
+- All 33 service tests passed after the production build, including Bangladesh and Kenya authentication, scoring, isolation, reset, stale updates, session expiry, CORS and existing India behavior. The new mandate game passed create, join and eight-round server scoring through the actual route against the test database.
+- Service TypeScript check and production build passed. Dashboard JavaScript syntax and whitespace checks passed.
 
-A second review rejected the live-board script because it prefilled the facilitator email in public JavaScript. The public script now leaves the username field empty, and test tools prompt for the identifier rather than embedding it. The private server continues to verify both credentials.
+## Live verification
 
-## Live checks
+Facilitator sign-in on the published GitHub Pages site unlocked teaching materials and connected to the production competition service. Final checks of the published revision and disposable live teams are recorded below when completed. Automated service tests above use an isolated test database and are not a claim that those browser interactions were exercised live.
 
-The command-line test client was rejected by the service’s browser protection (HTTP 403, code 1010). No attempt was made to bypass that protection. Live browser and GitHub Pages checks are recorded below when completed; the command-line attempt is not counted as a passing live test.
+## Materials provenance
 
-Publication and native-browser checks are in progress. Do not treat this preflight record as a completion claim.
+The October 22 training refresh used the separately supplied Rev.3/Rev.3.1 agendas and the two current training ZIPs. ZIP agendas were excluded. There are 19 participant handouts, 22 protected slide decks, 22 protected trainer scripts and two protected reserve sheets. This revision changes only agenda labels/placeholders and game/interface code; it does not re-upload the previously excluded NSDF translation PDF or publish facilitator credentials.

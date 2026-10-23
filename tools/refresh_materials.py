@@ -187,6 +187,8 @@ def main():
     (DIST/'data.js').write_text('window.BANGLADESH = '+json.dumps(old,separators=(',',':'),ensure_ascii=False)+';\n')
     (ROOT/'verification').mkdir(exist_ok=True)
     (ROOT/'verification'/'materials.json').write_text(json.dumps(verified,indent=2))
+    from review_agendas import main as review_agendas
+    review_agendas()
     print(json.dumps({'sessions':[12,10],'participantHandouts':len(activities),'protectedFiles':len(protected),'encryptedParts':len(store.parts),'encryptedBytes':sum(p.stat().st_size for p in pdir.rglob('*') if p.is_file())}))
 
 if __name__=='__main__':

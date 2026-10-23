@@ -1,9 +1,11 @@
 [
   {
     "path": "downloads/A3519987/A3519987_Agenda_Strengthening_Tripartite_SD_Institutions_Rev.3.docx",
-    "sha256": "ff6363cefbbe5026a715a6987dc04a7d7b5c0d448ff228b156cb2c0158ac3265",
+    "sha256": "b9fbfaebbe37e4d885588af4ea6b3d553a882128fb19d440a95a79de13675b76",
     "kind": "agenda",
-    "source": "A3519987_Agenda_Strengthening_Tripartite_SD_Institutions_Rev.3.docx"
+    "source": "A3519987_Agenda_Strengthening_Tripartite_SD_Institutions_Rev.3.docx",
+    "sourceSha256": "ff6363cefbbe5026a715a6987dc04a7d7b5c0d448ff228b156cb2c0158ac3265",
+    "edits": "Revision label and date corrected; preparation phase restored as to be confirmed; missing session leads explicitly marked to be confirmed. Supplied session times and content retained."
   },
   {
     "path": "downloads/A3519987/A3519987_H1.1_What_works_and_what_blocks.docx",
@@ -241,7 +243,7 @@
   },
   {
     "path": "downloads/A3519987/A3519987_Participant_Handouts_2026-10-22.zip",
-    "sha256": "63b61ddcf864fd8e3b13534d12c000d4a4ea93c028073d1a64ef5160ca9f3efc",
+    "sha256": "b0a3314ea424102152e841294879cd12cd5a25c5660217b1043db8d675df5027",
     "kind": "pack",
     "entries": [
       "A3519987_Agenda_Strengthening_Tripartite_SD_Institutions_Rev.3.docx",
@@ -262,9 +264,11 @@
   },
   {
     "path": "downloads/A3519988/A3519988_Agenda_Strengthening_Secretariat_Capacities_Rev.3.1.docx",
-    "sha256": "b0b12f3bcfe68748d9f8a5f76197072a7b3f5ae31a18250c6774884e141dc154",
+    "sha256": "34c70747af0474fb8d39077aea03cb2b88b16242b9359d23d41e33603632ef3f",
     "kind": "agenda",
-    "source": "A3519988_Agenda_Strengthening_Secretariat_Capacities_Rev.3.1.docx"
+    "source": "A3519988_Agenda_Strengthening_Secretariat_Capacities_Rev.3.1.docx",
+    "sourceSha256": "b0b12f3bcfe68748d9f8a5f76197072a7b3f5ae31a18250c6774884e141dc154",
+    "edits": "Revision label and date corrected; preparation phase restored as to be confirmed; missing session leads explicitly marked to be confirmed. Supplied session times and content retained."
   },
   {
     "path": "downloads/A3519988/A3519988_H1_Self_assessment_and_outcomes.docx",
@@ -424,7 +428,7 @@
   },
   {
     "path": "downloads/A3519988/A3519988_Participant_Handouts_2026-10-22.zip",
-    "sha256": "b72db66ef9dfb7cc60732db272bd5137bc6945dd9b848f2a11b74cb2100aed93",
+    "sha256": "e09276f252cfdd7d29e6d2f43f18f36e83a60ca39d875abc7fbed4df77ebd35f",
     "kind": "pack",
     "entries": [
       "A3519988_Agenda_Strengthening_Secretariat_Capacities_Rev.3.1.docx",

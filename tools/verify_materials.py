@@ -45,7 +45,14 @@ def main():
         else:
             value=(DIST/path).read_bytes()
             if row['kind']=='handout':assert value==archives[Path(path).name[:8]].read(row['source'])
-            if row['kind']=='agenda':assert value==(ROOT.parent/'upload'/row['source']).read_bytes()
+            if row['kind']=='agenda':
+                source=(ROOT.parent/'upload'/row['source']).read_bytes()
+                if row.get('edits'):
+                    assert hashlib.sha256(source).hexdigest()==row['sourceSha256']
+                    from docx import Document
+                    doc=Document(BytesIO(value));assert 'REVISION 2' not in doc.paragraphs[0].text
+                    assert any(r.cells[0].text=='Preparation phase' for r in doc.tables[0].rows)
+                else:assert value==source
             if row['kind']=='pack':
                 with ZipFile(BytesIO(value)) as z:
                     assert sorted(z.namelist())==row['entries']

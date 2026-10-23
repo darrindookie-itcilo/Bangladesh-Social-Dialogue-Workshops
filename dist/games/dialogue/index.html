@@ -135,20 +135,20 @@ details.how dd{margin:2px 0 0; color:var(--ink-2); font-size:14.5px}
 <body>
 <header class="top">
   <div class="wrap">
-    <div class="brand">Call It What It Is<small>ITCILO · Bangladesh workshops · Original Kenya scenarios</small></div>
+    <div class="brand">Call It What It Is<small>ITCILO · Bangladesh workshops · Bangladesh workshop scenarios</small></div>
     <div class="hud" id="hud"></div>
     <a class="itcilo-lockup" href="../../#games" aria-label="Workshop games home"><img src="../../assets/itcilo-logo.svg" alt="ITCILO — International Training Centre of the ILO"></a>
   </div>
 </header>
 <div class="wrap"><div id="liveStatus" class="note live-status" role="status"></div><div id="app"></div></div>
-<p class="foot">Training material. All twelve scenarios are composite and fictional.<br><a href="../../#games">Workshop dashboard</a> · <a href="../../#facilitator" target="_blank" rel="noopener">Facilitator view</a></p>
+<p class="foot">Training material. All twelve scenarios are fictional Bangladesh workshop situations; they do not describe the legal powers of a named institution.<br><a href="../../#games">Workshop dashboard</a> · <a href="../../#facilitator" target="_blank" rel="noopener">Facilitator view</a></p>
 
-<script src="../../race.js?v=20261022"></script>
-<script src="live.js?v=20261022"></script>
+<script src="../../race.js?v=20261023-2"></script>
+<script src="live.js?v=20261023-2"></script>
 <script>
 "use strict";
 /* ======================================================================
-   CALL IT WHAT IT IS — ITC-ILO Kenya workshop, Day 1 Session 3
+   CALL IT WHAT IT IS — ITCILO Bangladesh workshops
    A race on accuracy: name the form and the setting for twelve scenarios,
    correctly, in the shortest total time.
    ==================================================================== */
@@ -166,53 +166,106 @@ var FAMILIES = [
 ];
 
 var CARDS = [
- { sector:"Public health", called:"consultation", form:0, setting:2,
-   text:"The county health management team circulates the new shift roster by email on Friday afternoon, effective Monday, and invites staff to raise any concerns with their supervisor.",
-   why:"Views were invited after the decision was taken in the scenario after the roster had already been decided, without any commitment to reconsider it. And a supervisor is line management, not a workers’ representative — the scenario shows administrative information-sharing, without a representative social-dialogue setting." },
-
- { sector:"Higher education", called:"an information session", form:1, setting:0,
-   text:"The university council sends the draft workload policy to the academic staff union, receives written comments over three weeks, and publishes a revised draft showing which comments were accepted and which were not, with reasons, before the council adopts it.",
-   why:"Views were genuinely exchanged and genuinely considered before the decision, and reasons were given. That is consultation in this scenario: views were considered before adoption and a reasoned response was given." },
-
- { sector:"Public health", called:"a facilitated meeting", form:2, setting:1, arguable:true, altSetting:0,
-   text:"Talks on the new allowance structure have been deadlocked for three months. At the joint request of the county and the health workers’ union, the Ministry of Labour assigns a conciliator, who convenes four further sessions. The parties reach and sign an agreement, and the conciliator signs the record as a witness.",
-   why:"The parties exchanged proposals and reached a binding agreement, so the form is negotiation. The setting is where a room usually splits: the Ministry provided the conciliator and the venue but settled nothing itself and undertook nothing. Both readings are defensible — the useful question is what the Ministry would have had to do to make this genuinely tripartite." },
-
- { sector:"Higher education", called:"a committee", form:3, setting:0,
-   text:"A joint committee of the university and the union meets monthly under agreed terms of reference, sets its own agenda, decides the allocation of the staff development fund by consensus, and reports jointly to the council.",
-   why:"Ongoing, structured, jointly agenda-setting, and actually deciding something together. That is the deepest form there is — and they called it “a committee”." },
-
- { sector:"National", called:"tripartite consultation", form:0, setting:1,
-   text:"The Ministry circulates a draft policy to the central trade union organization and the central employers’ organization with a ten-day window for comment. Comments are submitted. The policy is published unchanged, and no response is given to either organization. The meeting record confirms that the comments were not considered.",
-   why:"The setting was right — the right parties at the right table. The form was not. If no view can be shown to have been considered and no reasons are ever given, this is notification with a comment box attached. A correct setting does not make it consultation." },
-
- { sector:"Cross-sector", called:"a tripartite board", form:1, setting:1,
-   text:"A Sector Skills Advisory Committee is chaired by the government department. The employers’ federation and the sector unions each nominate members. It meets quarterly, and its recommendations go to the Cabinet Secretary, who considers them and is not bound by them.",
-   why:"The label is right about the setting and misleading about the depth. Recommendations the decision-maker is free to set aside are consultation, not joint decision-making — which is perfectly legitimate, as long as nobody in the room believes they are negotiating." },
-
- { sector:"Public health", called:"consultation with staff", form:4, setting:2,
-   text:"Two ward managers agree between themselves, over tea, to swap two staff members for a month to cover a shortage. Both staff members are told afterwards and neither objects.",
-   why:"Two managers agreeing something is management. No workers’ or employers’ organization is involved, and the staff concerned were informed after the fact. It may well have been sensible and humane. It was not social dialogue, and calling it that devalues the term." },
-
- { sector:"Public health", called:"a courtesy", form:0, setting:0,
-   text:"Six weeks before the wage talks open, the county provides the union with the full payroll breakdown, the wage-bill ratio and the approved establishment, on request, under a confidentiality undertaking.",
-   why:"This is information-sharing, the lightest form — and it is excellent practice. A union that has the payroll data six weeks out can prepare properly. Depth is not the same as quality: good information-sharing beats bad negotiation every time." },
-
- { sector:"Higher education", called:"consultation", form:2, setting:0,
-   text:"Management and the union meet across eight sessions over two months, exchange written proposals and counter-proposals, and sign a collective agreement on promotion criteria, which is then registered. The minutes of every session are headed “consultative meeting”.",
-   why:"Proposals, counter-proposals, a signed and registered collective agreement. The label on the minutes is simply wrong — and labels on minutes matter later, when one side wants to argue about what those meetings were." },
-
- { sector:"National", called:"an advisory board", form:3, setting:1, arguable:true, altForm:2,
-   text:"At the national labour advisory body, government, the central employers’ organization and the central trade union organization work through a draft bill clause by clause and reach an agreed text. The Minister has undertaken in advance to table whatever the three parties agree.",
-   why:"The prior undertaking supports a partnership reading; an equally defensible reading is negotiation of an agreed text. Parliament still decides whether to enact the bill. A good argument says negotiation instead, and the distinction is whether this is a one-off bargain or a standing relationship of joint decision. Both readings score." },
-
- { sector:"Public health", called:"consultation", form:0, setting:2,
-   text:"The hospital board announces the new grading structure at a staff durbar, takes questions from the floor for twenty minutes, and thanks everyone for their valuable input.",
-   why:"Questions from the floor after an announcement are not an exchange of views before a decision, and a durbar is not a representative structure. The scenario describes an information-sharing activity, without evidence of a representative social-dialogue setting. The staff meeting itself does not establish worker representation." },
-
- { sector:"Public health", called:"a working group", form:3, setting:0,
-   text:"After a difficult round of talks on job grading, the county and the union establish a joint technical working group: equal numbers from each side, an independent chair agreed by both, a mandate to produce a costed proposal, and a commitment given in advance by both sides to take whatever it produces to their principals. It continues to meet quarterly and makes joint decisions on implementation within an agreed mandate.",
-   why:"Equal numbers, an agreed chair, a joint mandate and a prior commitment to carry the output. Note the contrast with the staff development committee earlier: partnership is a structure, not a mood." }
+ {
+  "sector": "Secretariat",
+  "called": "consultation",
+  "form": 0,
+  "setting": 2,
+  "text": "A secretariat emails its new document-submission deadline to its staff on Friday, effective Monday, and invites questions to line managers. Staff and their representatives had no opportunity to influence the deadline before it was adopted.",
+  "why": "This is information-sharing after a management decision. Questions may clarify the deadline, but there is no prior consideration of views or representative social-dialogue setting."
+ },
+ {
+  "sector": "Workplace dialogue",
+  "called": "an information session",
+  "form": 1,
+  "setting": 0,
+  "text": "In a fictional Bangladesh enterprise, management sends a draft training policy to the recognised workers’ union. Over three weeks it receives comments, revises the draft and explains which comments it accepted or rejected before adopting the policy.",
+  "why": "Worker representatives influenced a proposal before adoption, and management gave reasons. That is bipartite consultation; management retained the final decision."
+ },
+ {
+  "sector": "Workplace dialogue",
+  "called": "a facilitated meeting",
+  "form": 2,
+  "setting": 1,
+  "arguable": true,
+  "altSetting": 0,
+  "text": "Talks between an employers’ association and sector unions on a training allowance have stalled. At their joint request, a government labour officer facilitates four further sessions. The parties exchange proposals and sign an agreement; the officer witnesses it but makes no commitment on the government’s behalf.",
+  "why": "The form is negotiation because the parties bargain and reach an agreement. The facilitator’s presence makes the setting arguable: bipartite and tripartite both score. Discuss whether the government acted as a substantive third party or only supported two negotiating parties."
+ },
+ {
+  "sector": "Workplace dialogue",
+  "called": "a committee",
+  "form": 3,
+  "setting": 0,
+  "text": "Management and a workers’ union establish a continuing joint training committee. Under agreed terms of reference, equal numbers from each side set its agenda, decide the use of a training fund by consensus within a delegated budget, and review implementation together each quarter.",
+  "why": "A standing representative structure jointly sets its agenda and makes decisions within an agreed mandate. This supports the partnership classification used in this exercise. The setting is bipartite."
+ },
+ {
+  "sector": "National dialogue",
+  "called": "tripartite consultation",
+  "form": 0,
+  "setting": 1,
+  "text": "In a fictional national policy exercise, the ministry sends a draft to representative employers’ and workers’ organisations and invites comments within ten days. It publishes the policy unchanged. The official record confirms that nobody reviewed the comments before adoption.",
+  "why": "Government, employers and workers were involved, so the setting is tripartite. The record rules out meaningful consideration of views: this is information-sharing with an unused comment channel, despite the consultation label."
+ },
+ {
+  "sector": "Sector dialogue",
+  "called": "a tripartite board",
+  "form": 1,
+  "setting": 1,
+  "text": "A fictional sector skills advisory committee includes government officials and representatives nominated by employers’ and workers’ organisations. It considers training proposals quarterly and sends recommendations to the responsible ministry, which considers them and explains its decisions but retains authority to decide.",
+  "why": "The setting is tripartite and the form is consultation. Recommendations influence a decision, but the committee has no delegated power to make that decision jointly."
+ },
+ {
+  "sector": "Secretariat",
+  "called": "consultation with staff",
+  "form": 4,
+  "setting": 2,
+  "text": "Two secretariat managers agree between themselves to move two administrative staff to meeting support for one month. They inform the staff afterwards. Neither worker representatives nor employers’ organisations participate in the decision.",
+  "why": "An agreement between managers is an administrative decision. It may solve a staffing problem, but no representative exchange between government, employers or workers took place."
+ },
+ {
+  "sector": "Workplace dialogue",
+  "called": "a courtesy",
+  "form": 0,
+  "setting": 0,
+  "text": "Six weeks before wage talks, a fictional Bangladesh enterprise provides its recognised union with payroll totals, job-grade information and the agreed costing assumptions, under an appropriate confidentiality arrangement. The parties have not yet exchanged wage proposals.",
+  "why": "The exchange is bipartite information-sharing that helps the union prepare. Useful evidence is a substantive contribution even before consultation or negotiation begins."
+ },
+ {
+  "sector": "Workplace dialogue",
+  "called": "consultation",
+  "form": 2,
+  "setting": 0,
+  "text": "An employers’ association and sector unions exchange written proposals and counter-proposals over eight meetings. They agree promotion criteria and sign a collective agreement within their authority. Every set of minutes is headed “consultative meeting”.",
+  "why": "The parties bargained over proposals and concluded an agreement. This is bipartite negotiation, regardless of the heading used in the minutes."
+ },
+ {
+  "sector": "National dialogue",
+  "called": "an advisory board",
+  "form": 3,
+  "setting": 1,
+  "arguable": true,
+  "altForm": 2,
+  "text": "In a fictional Bangladesh tripartite policy exercise, government, employers’ organisations and workers’ organisations work through a draft bill clause by clause and agree a text. Before talks began, the minister undertook to table whatever the three parties agreed. Parliament retains its legislative authority.",
+  "why": "The prior undertaking supports a partnership reading; negotiating an agreed text is also defensible. Both classifications score. The tripartite agreement does not itself enact a law: Parliament still decides."
+ },
+ {
+  "sector": "Secretariat",
+  "called": "consultation",
+  "form": 0,
+  "setting": 2,
+  "text": "A secretariat director announces an already approved filing protocol at a staff briefing, takes questions for twenty minutes, and thanks staff for their input. No representative body was involved and no part of the approved protocol is open for reconsideration.",
+  "why": "Questions after a completed decision provide clarification. They do not establish prior consultation or representative social dialogue. The setting is neither bipartite nor tripartite in this scenario."
+ },
+ {
+  "sector": "Workplace dialogue",
+  "called": "a working group",
+  "form": 3,
+  "setting": 0,
+  "text": "After difficult job-grading talks in a fictional Bangladesh enterprise, management and the recognised union establish a continuing joint group. Equal numbers from each side choose an independent chair, agree a costing mandate and jointly decide implementation questions within delegated authority. Each quarter they review progress and report to both principals.",
+  "why": "A continuing representative structure with an agreed mandate, joint decisions and shared follow-up supports partnership in this exercise. Its management and union composition makes it bipartite."
+ }
 ];
 
 var PTS_FORM = 10, PTS_SETTING = 5, PTS_MOVE = 5;

@@ -8,14 +8,14 @@ Updated from the materials supplied on **22 October 2026**. GitHub Actions publi
 
 - **A3519987 · Tripartite institutions · 26–29 October:** 12 sessions. Tuesday 27 October morning is reserved for the Bangladesh Labour Rules meeting; course sessions resume at 13:30. Thursday is a half day.
 - **A3519988 · Secretariat capacities · 30 October–1 November:** 10 sessions; Sunday is a half day.
-- Only the separately attached **Rev.3** and **Rev.3.1** agendas are used. Agenda files inside the materials ZIPs are excluded. Original agenda bytes are preserved; the supplied documents’ internal cover headings still say “Revision 2”.
+- Only the separately attached **Rev.3** and **Rev.3.1** agendas are used. Agenda files inside the materials ZIPs are excluded. The download labels now agree with the internal revision headings. On 23 October, missing session leads and preparation arrangements were explicitly marked to be confirmed; the supplied timetable and session content are retained. Both handout packs contain these corrected agendas.
 - The activity desk contains **19 current participant handouts**, editable Word downloads, readable previews and two refreshed participant ZIPs. The previous handout set and Rev.1 packs/agendas are removed from the published tree.
 - The updated secretariat toolkit contains **eight templates**, including an annual budget template. It is available throughout that workshop. Separate activity sheets referenced for Modules 6–11 were not included in the supplied ZIP; the dashboard states this.
 - Facilitator access contains **22 current slide decks, 22 matching trainer scripts and two reserve sheets**. Reserve sheets are optional facilitator material, not scheduled participant downloads.
 
-## Six learning games
+## Seven learning games
 
-The original **Call It What It Is** retains the Kenya scenarios, feedback and scoring. Five original Bangladesh workshop challenges add 32 rounds using single choices, pairs and sequencing:
+**Call It What It Is** now uses twelve fictional Bangladesh workshop scenarios; its scoring and two acceptable alternative classifications are preserved. Six original Bangladesh workshop challenges add 40 rounds using single choices, pairs and sequencing:
 
 | Game | Best used for |
 | --- | --- |
@@ -24,8 +24,15 @@ The original **Call It What It Is** retains the Kenya scenarios, feedback and sc
 | Secretariat Sprint | Meeting planning, fair information, minutes, budgeting and technical support |
 | Decision to Delivery | Assigned commitments, indicators, follow-up and reform pathways |
 | Action Plan Rescue | Drafting, peer review, 30-day improvements and institutional roadmaps |
+| Whose Table Is It? | Mandates, routing a matter to the right body, referral files and overlap |
 
-The programme and game desk recommend games for every workshop day. All scenarios and numerical examples are fictional training material. Practice needs no session code. New challenges award 10 points per fully correct round; two-choice rounds award 5 points for each correct choice. Right/wrong totals count whole rounds, so a partial round counts as wrong. The original game counts correct form classifications separately from its setting and keyword bonus points.
+Handout search covers titles, document text and linked session themes, including budget/cost/resource terminology. Clearing a search restores the handouts even on the same route.
+
+The programme and game desk recommend games for every workshop day, and each recommendation block names the day it belongs to. All scenarios and numerical examples are fictional training material. Practice needs no session code. New challenges award 10 points per fully correct round; two-choice rounds award 5 points for each correct choice. Right/wrong totals count whole rounds, so a partial round counts as wrong. The original game counts correct form classifications separately from its setting and keyword bonus points.
+
+**Answer positions are shuffled for display.** Every option list is reordered deterministically before it is drawn, and each game's two-choice round is given a different target position pair. Stored selections and anything sent to the competition service stay in the question bank's original index space, so server scoring is unchanged. Before this, the correct pair was A and C in all five two-choice rounds and B in 13 of 23 single rounds; a team answering by position alone could reach about two thirds of the available points without reading a question.
+
+**All seven games support live competition and practice.** The competition service now includes the same eight mandate rounds for **Whose Table Is It?**, and the facilitator board offers it in the game selector.
 
 ## Run a live competition
 
@@ -36,6 +43,8 @@ The programme and game desk recommend games for every workshop day. All scenario
 5. Reset one team or all teams in that session. A confirmation describes what clears. Connected team devices return to question one; stale updates from the prior attempt are rejected.
 
 The facilitator can hide scores, project the board, export CSV results, close a session to new teams or reopen it. Closing entry does not stop teams already joined. The timer and local result-code board remain available as an offline classroom fallback for the original game.
+
+Session codes are eight characters drawn from letters A–Z and digits 2–9; there is no zero and no one, so a code read aloud cannot be mistyped as `I` for `1` or `O` for `0`. If a team's device cannot reach the board, the challenge now says so in plain words and offers practice mode, rather than showing the browser's own `Failed to fetch`.
 
 Live competition uses a dedicated Bangladesh API namespace on the existing workshop service:
 `https://platform-grievance-india.darrin-dookie.chatgpt.site/api/bangladesh/race`

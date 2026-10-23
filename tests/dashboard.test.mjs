@@ -52,13 +52,13 @@ test('facilitator live controls send one create request after reconnecting and r
   const t=await app('#facilitator?tab=live&w=institutions',(u,o)=>{const action=u.searchParams.get('action');if(action==='create')creates++;if(action==='reset'||action==='reset-all')resets++;return new Response(JSON.stringify({serverNow:Date.now(),...(action==='login'?{token:'bdf_fixture',expiresAt:Date.now()+5400000}:action==='rooms'?{rooms:[]}:action==='create'?{room:r}:action==='board'?{room:r,teams:[team]}:{ok:true})}));});try{const f=t.w.document.querySelector('#facilitator-login');f.elements.username.value=process.env.BD_TEST_USERNAME;f.elements.password.value=process.env.BD_TEST_PASSWORD;submit(f);await until(()=>t.w.document.querySelector('#create-session'),'live board unavailable');
     t.w.BDLive.mount();t.w.BDLive.mount();const create=t.w.document.querySelector('#create-session');submit(create);await until(()=>creates===1&&t.w.document.querySelector('.session-code'),'session create failed or duplicated');t.w.document.querySelector('[data-board=refresh]').click();await until(()=>!!t.w.document.querySelector('[data-reset-team]'),'team progress did not render');const text=t.w.document.querySelector('#live-team-table').textContent;assert.match(text,/Reframe · Question 2/);assert.match(text,/10/);assert(t.w.document.querySelector('[data-board=reset-all]'));t.w.document.querySelector('[data-reset-team]').click();await until(()=>resets===1&&t.w.document.querySelector('#board-notice').textContent.includes('Reset saved'),'team reset not completed');assert.deepEqual(t.errors,[]);
   }finally{t.close();}});
-test('all five new games complete all 32 decision rounds with exact scores and exportable results',async()=>{const bank=JSON.parse(await readFile(path.join(dist,'games/bank.json'),'utf8'));
+test('all six workshop challenges complete all 40 decision rounds with exact scores and exportable results',async()=>{const bank=JSON.parse(await readFile(path.join(dist,'games/bank.json'),'utf8'));
   for(const g of bank.games){const t=await dom('games/challenges/index.html?game='+g.id+'&w=secretariats');try{await t.evaluate('race.js');await t.evaluate('games/challenges/challenge.js');const form=t.w.document.querySelector('#setup');assert(form);form.elements.team.value='QA practice';submit(form);await until(()=>!!t.w.document.querySelector('#lock'),'game did not start');
-    for(const q of g.questions){if(q.kind==='order'){let order=q.options.map((_,i)=>i);for(let target=0;target<q.answer.length;target++){let current=order.indexOf(q.answer[target]);while(current>target){t.w.document.querySelector(`[data-move="${current}"][data-delta="-1"]`).click();[order[current-1],order[current]]=[order[current],order[current-1]];current--;}}}else for(const n of q.answer)t.w.document.querySelector(`[data-choice="${n}"]`).click();assert(!t.w.document.querySelector('#lock').disabled);t.w.document.querySelector('#lock').click();assert.match(t.w.document.querySelector('.feedback').textContent,/Good call/);t.w.document.querySelector('#next').click();}
+    for(const q of g.questions){if(q.kind==='order'){let order=Array.from(t.w.document.querySelectorAll('.order-row span'),row=>q.options.indexOf(row.textContent));assert.notDeepEqual(order,q.answer,'a sequencing round must need a decision');for(let target=0;target<q.answer.length;target++){let current=order.indexOf(q.answer[target]);while(current>target){t.w.document.querySelector(`[data-move="${current}"][data-delta="-1"]`).click();[order[current-1],order[current]]=[order[current],order[current-1]];current--;}}}else for(const n of q.answer)t.w.document.querySelector(`[data-choice="${n}"]`).click();assert(!t.w.document.querySelector('#lock').disabled);t.w.document.querySelector('#lock').click();assert.match(t.w.document.querySelector('.feedback').textContent,/Good call/);t.w.document.querySelector('#next').click();}
     assert.match(t.w.document.querySelector('.results-number').textContent,new RegExp(String(g.questions.length*10)));t.w.document.querySelector('#export').click();assert.equal(JSON.parse(await t.downloads[0].blob.text()).right,g.questions.length);assert.deepEqual(t.errors,[]);
   }finally{t.close();}}
 });
-test('game desk lists six games and notebooks remain separate across workshops',async()=>{const t=await app('#games?w=institutions');try{assert.equal(t.w.document.querySelectorAll('.game-card').length,5);assert.equal(t.w.document.querySelectorAll('.daily-games').length,4);t.w.location.hash='notebook?w=institutions';await pause();let input=t.w.document.querySelector('[data-note=reflection]');input.value='Institution reflection';input.dispatchEvent(new t.w.Event('input',{bubbles:true}));t.w.location.hash='notebook?w=secretariats';await pause();assert.equal(t.w.document.querySelector('[data-note=reflection]').value,'');t.w.location.hash='notebook?w=institutions';await pause();assert.equal(t.w.document.querySelector('[data-note=reflection]').value,'Institution reflection');assert.deepEqual(t.errors,[]);}finally{t.close();}});
+test('game desk lists seven games and notebooks remain separate across workshops',async()=>{const t=await app('#games?w=institutions');try{assert.equal(t.w.document.querySelectorAll('.game-card').length,6);assert.equal(t.w.document.querySelectorAll('.daily-games').length,4);t.w.location.hash='notebook?w=institutions';await pause();let input=t.w.document.querySelector('[data-note=reflection]');input.value='Institution reflection';input.dispatchEvent(new t.w.Event('input',{bubbles:true}));t.w.location.hash='notebook?w=secretariats';await pause();assert.equal(t.w.document.querySelector('[data-note=reflection]').value,'');t.w.location.hash='notebook?w=institutions';await pause();assert.equal(t.w.document.querySelector('[data-note=reflection]').value,'Institution reflection');assert.deepEqual(t.errors,[]);}finally{t.close();}});
 test('a different team alias gets an independent live token while the same alias resumes its team',async()=>{
   const seen=[],t=await dom('games/challenges/index.html','',async(u,o)=>{const b=JSON.parse(o.body),bearer=o.headers.Authorization;seen.push(bearer);return new Response(JSON.stringify({serverNow:Date.now(),team:{id:bearer,name:b.name,sector:b.sector,room:b.room,generation:1,revision:0,startedAt:Date.now(),finishedAt:0,state:{}}}));});
   try{await t.evaluate('race.js');const C=t.w.NaivashaRace.RaceConnection;
@@ -66,5 +66,32 @@ test('a different team alias gets an independent live token while the same alias
     const resume=new C('rapport');await resume.join({room:'ABCDEFGH',name:'Table A',sector:'health'});
     const b=new C('rapport');await b.join({room:'ABCDEFGH',name:'Table B',sector:'health'});
     assert.equal(seen[0],seen[1]);assert.notEqual(seen[0],seen[2]);a.stop();resume.stop();b.stop();assert.deepEqual(t.errors,[]);
+  }finally{t.close();}
+});
+
+test('handout search finds text and session topics while preserving the workshop and session filters',async()=>{
+  for(const wid of ['institutions','secretariats']){const t=await app('#activities?w='+wid);try{
+    const search=t.w.document.querySelector('#activity-search');
+    for(const term of ['evidence','minutes','wage','budget','action plan']){search.value=term;search.dispatchEvent(new t.w.Event('input',{bubbles:true}));assert(t.w.document.querySelectorAll('.resource-card').length>0,wid+' search missed '+term);}
+    search.value='no-such-handout-xyz';search.dispatchEvent(new t.w.Event('input',{bubbles:true}));assert.equal(t.w.document.querySelectorAll('.resource-card').length,0);assert(t.w.document.querySelector('[data-clear-filters]'));t.w.document.querySelector('[data-clear-filters]').click();await pause();assert(t.w.document.querySelectorAll('.resource-card').length>0);assert.deepEqual(t.errors,[]);
+  }finally{t.close();}}
+});
+test('live join rejects ambiguous code characters and explains a network failure with a practice fallback',async()=>{
+  const t=await dom('games/challenges/index.html','',()=>{throw new TypeError('Failed to fetch');});
+  try{await t.evaluate('race.js');const c=new t.w.NaivashaRace.RaceConnection('rapport');
+    await assert.rejects(c.join({room:'ABCD01GH',name:'QA table'}),/digits 2–9/);
+    await assert.rejects(c.join({room:'ABCDEFGH',name:'QA table'}),/practice mode/);assert(!c.message.includes('Failed to fetch'));c.stop();
+  }finally{t.close();}
+});
+test('all handouts, corrected agendas and participant packs match the recorded integrity hashes',async()=>{
+  const records=JSON.parse(await readFile(path.join(root,'verification/materials.json'),'utf8'));
+  for(const row of records.filter(r=>!r.path.startsWith('protected/')))assert.equal(hash(await readFile(path.join(dist,row.path))),row.sha256,row.path);
+});
+test('Bangladesh dialogue scenarios preserve every server-scored classification and both acceptable alternatives',async()=>{
+  const t=await dom('games/dialogue/index.html');try{await t.evaluate('race.js');await t.evaluate('games/dialogue/live.js');
+    const html=await readFile(path.join(dist,'games/dialogue/index.html'),'utf8'),inline=[...html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)].map(m=>m[1]).filter(Boolean);for(const code of inline)t.w.eval(code);
+    const rules=JSON.parse(await readFile(path.join(root,'../platform-service/lib/kenya-rules.json'),'utf8')).dialogue.cards;
+    const cards=JSON.parse(html.match(/var CARDS = (\[[\s\S]*?\n\]);/)[1]);assert.equal(cards.length,12);for(let i=0;i<12;i++){const c=cards[i],r=rules[i];assert.equal(c.form,r.form);assert.equal(c.setting,r.setting);assert.equal(c.altForm,r.altForm);assert.equal(c.altSetting,r.altSetting);assert(!/county|university|ward manager|hospital board|Cabinet Secretary/i.test(c.text));}
+    assert.equal(cards.filter(c=>c.arguable).length,2);assert.deepEqual(t.errors,[]);
   }finally{t.close();}
 });

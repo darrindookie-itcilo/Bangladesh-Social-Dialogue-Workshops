@@ -1,7 +1,7 @@
 'use strict';
 (()=>{
   const API='https://platform-grievance-india.darrin-dookie.chatgpt.site/api/bangladesh/race';
-  const NAMES={dialogue:'Call It What It Is',rapport:'Rapport Relay',inclusion:'Inclusion Detective',secretariat:'Secretariat Sprint',delivery:'Decision to Delivery',action:'Action Plan Rescue'};
+  const NAMES={dialogue:'Call It What It Is',rapport:'Rapport Relay',inclusion:'Inclusion Detective',secretariat:'Secretariat Sprint',delivery:'Decision to Delivery',action:'Action Plan Rescue',mandate:'Whose Table Is It?'};
   const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   let token=null,expiresAt=0,rooms=[],currentRoom='',teams=[],poll=null,busy=false,epoch=0,lastSync=0,serverOffset=0,hidden=false;
   const clock=ms=>{const s=Math.max(0,Math.floor(ms/1000));return `${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`;};
@@ -15,7 +15,7 @@
       let data;try{data=await response.json();}catch{throw new Error('The live service did not return a usable response. Please retry.');}
       if(!response.ok){const error=new Error(data.error||'The live service could not complete this request.');error.status=response.status;throw error;}
       serverOffset=data.serverNow-Date.now();return data;
-    }catch(error){if(error.name==='AbortError')throw new Error('The live service timed out. Check your connection and retry.');throw error;}finally{clearTimeout(timeout);}
+    }catch(error){if(error.name==='AbortError')throw new Error('The live service timed out. Check your connection and retry.');if(error.name==='TypeError')throw new Error('Could not reach the live board. Check your connection and retry. Your teaching materials are still available.');throw error;}finally{clearTimeout(timeout);}
   }
   async function signIn(username,password){const data=await request('login',{username,password});token=data.token;expiresAt=data.expiresAt;rooms=[];currentRoom='';return true;}
   async function signOut(){stop();const old=token;token=null;expiresAt=0;rooms=[];teams=[];currentRoom='';if(old){try{await fetch(API+'?action=logout',{method:'POST',headers:{Authorization:'Bearer '+old,'Content-Type':'application/json'},body:'{}',mode:'cors',credentials:'omit',keepalive:true});}catch{}}}
