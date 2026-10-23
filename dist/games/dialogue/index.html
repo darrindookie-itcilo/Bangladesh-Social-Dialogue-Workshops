@@ -143,7 +143,7 @@ details.how dd{margin:2px 0 0; color:var(--ink-2); font-size:14.5px}
 <div class="wrap"><div id="liveStatus" class="note live-status" role="status"></div><div id="app"></div></div>
 <p class="foot">Training material. All twelve scenarios are fictional Bangladesh workshop situations; they do not describe the legal powers of a named institution.<br><a href="../../#games">Workshop dashboard</a> · <a href="../../#facilitator" target="_blank" rel="noopener">Facilitator view</a></p>
 
-<script src="../../race.js?v=20261023-2"></script>
+<script src="../../race.js?v=20261023-5"></script>
 <script src="live.js?v=20261023-2"></script>
 <script>
 "use strict";
@@ -478,7 +478,7 @@ function viewSetup(){
     '</div>' +
     '<label for="roomCode" class="eyebrow">Session code</label>' +
     '<input id="roomCode" class="q3" maxlength="8" placeholder="Optional for practice" value="' + esc(S.room) + '" style="font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;max-width:240px">' +
-    '<p class="note" style="margin-top:6px">Enter the eight-character code from your facilitator for a live race. Leave blank to practise on this device.</p>' +
+    '<p class="note" style="margin-top:6px">Enter the eight-character code from your facilitator for a live race. Leave blank to practise on this device. The live clock starts when you join; wait for the facilitator’s signal.</p>' +
     '<div class="actions"><button class="go" id="begin">Deal the first card</button></div>' +
   '</div>';
 }
@@ -585,7 +585,15 @@ function wire(){
       var q = document.getElementById("q3"); if(q) S.q3 = q.value;
       var r = document.getElementById("roomCode"); if(r) S.room = r.value.toUpperCase().replace(/[^A-Z0-9]/g,"");
       var n = document.getElementById("teamName"); if(n) S.team = n.value;
-      save(); render();
+      save();
+      if(S.screen === "card" && (k === "form" || k === "setting")){
+        // Keep the card and focused button in place while the team decides.
+        app.querySelectorAll('[data-pick="' + k + '"]').forEach(function(choice){
+          choice.setAttribute("aria-pressed", String(Number(choice.getAttribute("data-v")) === S[k]));
+        });
+        document.getElementById("lock").disabled = S.form === null || S.setting === null;
+        publish();
+      } else render();
     });
   });
   var g = function(id){ return document.getElementById(id); };

@@ -4,3 +4,8 @@
 .practice-only{margin:0 0 8px;padding:8px 10px;border-left:3px solid #E72F1F;background:#fdf1f0;font-size:.86rem;line-height:1.45;color:#5a1b14}
 .practice-only strong{color:#b4291b}
 .daily-games strong{display:block;margin-bottom:6px}
+
+/* Keep the shared code on one line, including half-width facilitator windows. */
+.session-code{display:block;white-space:nowrap;overflow-wrap:normal;word-break:normal;font-size:clamp(26px,5vw,54px);letter-spacing:.09em}
+.session-code-card>div{min-width:0}
+@media(max-width:1100px){.session-code-card{display:block}.session-code-card .actions{max-width:none;margin-top:20px}}

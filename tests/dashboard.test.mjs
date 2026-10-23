@@ -26,6 +26,14 @@ async function dom(page='index.html',hash='',api){
   return{d,w,errors,downloads,evaluate,close:()=>d.window.close()};
 }
 async function app(hash,api){const t=await dom('index.html',hash,api);for(const f of ['data.js','game-catalog.js','facilitator-live.js','app.js'])await t.evaluate(f);return t;}
+async function dialogue(page='games/dialogue/index.html',api,storage={}){
+  const t=await dom(page,'',api);
+  for(const [key,value] of Object.entries(storage))t.w.localStorage.setItem(key,value);
+  await t.evaluate('race.js');await t.evaluate('games/dialogue/live.js');
+  const html=await readFile(path.join(dist,'games/dialogue/index.html'),'utf8');
+  for(const match of html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g))if(match[1].trim())t.w.eval(match[1]);
+  return t;
+}
 async function route(t,hash){t.w.location.hash=hash;await until(()=>t.w.document.title.includes(hash.split('?')[0]==='programme'?(hash.includes('secretariats')?'Secretariat':'Tripartite'):hash.startsWith('activities')?'Activity':hash.startsWith('games')?'games':hash.startsWith('notebook')?'notebook':'Facilitator'),'route did not render');await pause();}
 const submit=form=>form.dispatchEvent(new form.ownerDocument.defaultView.Event('submit',{bubbles:true,cancelable:true}));
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex');
@@ -51,6 +59,9 @@ test('facilitator rejects a wrong password, unlocks 22 sessions and both reserve
 test('facilitator live controls send one create request after reconnecting and render progress, right/wrong, points and reset controls',async()=>{let creates=0,resets=0;const r={code:'ABCDEFGH',workshop:'institutions',game:'rapport',label:'QA UI session',active:1};const team={id:'test-id',name:'Table A',generation:1,startedAt:Date.now(),finishedAt:0,updatedAt:Date.now(),metrics:{step:2,steps:6,stepName:'Reframe · Question 2',answered:1,correct:1,wrong:0,score:10,max:60,done:false}};
   const t=await app('#facilitator?tab=live&w=institutions',(u,o)=>{const action=u.searchParams.get('action');if(action==='create')creates++;if(action==='reset'||action==='reset-all')resets++;return new Response(JSON.stringify({serverNow:Date.now(),...(action==='login'?{token:'bdf_fixture',expiresAt:Date.now()+5400000}:action==='rooms'?{rooms:[]}:action==='create'?{room:r}:action==='board'?{room:r,teams:[team]}:{ok:true})}));});try{const f=t.w.document.querySelector('#facilitator-login');f.elements.username.value=process.env.BD_TEST_USERNAME;f.elements.password.value=process.env.BD_TEST_PASSWORD;submit(f);await until(()=>t.w.document.querySelector('#create-session'),'live board unavailable');
     t.w.BDLive.mount();t.w.BDLive.mount();const create=t.w.document.querySelector('#create-session');create.querySelector('button').click();await until(()=>creates===1&&t.w.document.querySelector('.session-code'),'session create failed or duplicated');t.w.document.querySelector('[data-board=refresh]').click();await until(()=>!!t.w.document.querySelector('[data-reset-team]'),'team progress did not render');const text=t.w.document.querySelector('#live-team-table').textContent;assert.match(text,/Reframe · Question 2/);assert.match(text,/10/);assert(t.w.document.querySelector('[data-board=reset-all]'));t.w.document.querySelector('[data-reset-team]').click();await until(()=>resets===1&&t.w.document.querySelector('#board-notice').textContent.includes('Reset saved'),'team reset not completed');assert.deepEqual(t.errors,[]);
+    t.w.document.querySelector('[data-board=project]').click();assert(t.w.document.body.classList.contains('board-projector'));assert(t.w.document.querySelector('[data-board=project]').textContent.includes('Exit'));
+    t.w.document.querySelector('[data-board=export]').click();assert.equal(t.downloads.length,1);assert.equal(t.downloads[0].name,'Bangladesh_ABCDEFGH_results.csv');const csv=await t.downloads[0].blob.text();assert.match(csv,/Rank,Session,Game,Workshop,Team/);assert.match(csv,/"Table A"/);assert.match(csv,/"10","60"/);
+    t.w.document.querySelector('[data-board=project]').click();assert(!t.w.document.body.classList.contains('board-projector'));
   }finally{t.close();}});
 test('all six workshop challenges complete all 40 decision rounds with exact scores and exportable results',async()=>{const bank=JSON.parse(await readFile(path.join(dist,'games/bank.json'),'utf8'));
   for(const g of bank.games){const t=await dom('games/challenges/index.html?game='+g.id+'&w=secretariats');try{await t.evaluate('race.js');await t.evaluate('games/challenges/challenge.js');const form=t.w.document.querySelector('#setup');assert(form);form.elements.team.value='QA practice';submit(form);await until(()=>!!t.w.document.querySelector('#lock'),'game did not start');
@@ -94,4 +105,38 @@ test('Bangladesh dialogue scenarios preserve every server-scored classification 
     const cards=JSON.parse(html.match(/var CARDS = (\[[\s\S]*?\n\]);/)[1]);assert.equal(cards.length,12);for(let i=0;i<12;i++){const c=cards[i],r=rules[i];assert.equal(c.form,r.form);assert.equal(c.setting,r.setting);assert.equal(c.altForm,r.altForm);assert.equal(c.altSetting,r.altSetting);assert(!/county|university|ward manager|hospital board|Cabinet Secretary/i.test(c.text));}
     assert.equal(cards.filter(c=>c.arguable).length,2);assert.deepEqual(t.errors,[]);
   }finally{t.close();}
+});
+
+test('choosing dialogue answers keeps the card, scroll position, focus and draft change until locking',async()=>{
+  const t=await dialogue();try{
+    const d=t.w.document;t.w.scrollTo=(x,y)=>{t.w.scrollY=y;};
+    d.querySelector('#toSetup').click();d.querySelector('#teamName').value='Scroll QA';d.querySelector('#begin').click();
+    const card=JSON.parse((await readFile(path.join(dist,'games/dialogue/index.html'),'utf8')).match(/var CARDS = (\[[\s\S]*?\n\]);/)[1])[0];
+    const draft=d.querySelector('#q3'),lock=d.querySelector('#lock');draft.value='Consult before the decision';
+    Object.defineProperty(t.w,'scrollY',{value:640,writable:true,configurable:true});
+    for(const [group,value] of [['form',card.form],['setting',card.setting]]){
+      const choice=d.querySelector(`[data-pick="${group}"][data-v="${value}"]`);choice.focus();choice.click();
+      assert.equal(t.w.scrollY,640);assert.equal(d.activeElement,choice);assert.equal(d.querySelector('#q3'),draft);assert.equal(d.querySelector('#lock'),lock);
+      assert.equal(choice.getAttribute('aria-pressed'),'true');assert.equal(draft.value,'Consult before the decision');
+    }
+    assert(!lock.disabled);assert.equal(JSON.parse(t.w.localStorage.getItem('bangladesh-dialogue-v2')).score,0);
+    lock.click();assert.equal(JSON.parse(t.w.localStorage.getItem('bangladesh-dialogue-v2')).score,20);assert.equal(t.w.scrollY,0);assert(d.querySelector('#next'));assert.deepEqual(t.errors,[]);
+  }finally{t.close();}
+});
+
+test('leaving a live dialogue game survives a reload of its join link and explicit rejoin keeps the team',async()=>{
+  const calls=[],tokens=[],page='games/dialogue/index.html?w=institutions&room=ABCDEFGH';
+  const team={id:'leave-qa',name:'Leave QA',sector:'health',room:'ABCDEFGH',generation:1,revision:0,startedAt:Date.now(),finishedAt:0,state:{}};
+  const api=(u,o)=>{const action=u.searchParams.get('action');calls.push(action);if(action==='join')tokens.push(o.headers.Authorization);return new Response(JSON.stringify({serverNow:Date.now(),team}));};
+  const t=await dialogue(page,api);let next;
+  try{
+    let d=t.w.document;d.querySelector('#toSetup').click();d.querySelector('#teamName').value='Leave QA';d.querySelector('#begin').click();await until(()=>!!d.querySelector('#leaveRaceBtn'),'team did not join');
+    d.querySelector('#leaveRaceBtn').click();assert.match(d.querySelector('#liveStatus').textContent,/Practice/);assert(d.querySelector('#begin'));assert(!d.querySelector('#leaveRaceBtn'));
+    const storage=Object.fromEntries(Array.from({length:t.w.localStorage.length},(_,i)=>{const key=t.w.localStorage.key(i);return[key,t.w.localStorage.getItem(key)];}));
+    assert.equal(JSON.parse(storage['bangladesh-race-v2-dialogue']).detached,true);const before=calls.length;
+    next=await dialogue(page,api,storage);d=next.w.document;await pause();
+    assert.equal(calls.length,before,'reload must not automatically resume or publish to the race');assert.match(d.querySelector('#liveStatus').textContent,/Practice/);assert(d.querySelector('#begin'));assert(!d.querySelector('#leaveRaceBtn'));
+    d.querySelector('#begin').click();await until(()=>!!d.querySelector('#leaveRaceBtn'),'explicit rejoin failed');assert.equal(tokens.length,2);assert.equal(tokens[0],tokens[1]);
+    assert.equal(JSON.parse(next.w.localStorage.getItem('bangladesh-race-v2-dialogue')).detached,false);assert(!calls.some(a=>/reset|delete|close/.test(a)));assert.deepEqual(t.errors,[]);assert.deepEqual(next.errors,[]);
+  }finally{t.close();next?.close();}
 });
