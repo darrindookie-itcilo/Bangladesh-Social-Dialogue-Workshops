@@ -24,7 +24,11 @@
 - The published mandate game completed all eight rounds in the browser with 80/80 points. Its session-code field is present for live play. The game desk displays six workshop challenges/40 decision rounds plus the twelve-scenario dialogue game; no practice-only restriction remains.
 - The command-line live-service test stopped at the service's browser protection (HTTP 403/code 1010), as required. This is not counted as a passing live test.
 - The facilitator controls use explicit, removable event listeners, and the interface regression check activates the actual submit button after repeated mounts. All 11 tests pass with this change.
-- Live team join, reset and CSV download still require a completed production-browser check; automated service tests above use an isolated test database. Browser-control issues encountered during this run are not reported as passing interactions.
+- All eight published dashboard views were checked at 390px, with no horizontal overflow and no captured console errors. The game desk was also checked on desktop.
+- A native-browser fixture successfully created and displayed a session through the real facilitator UI with simulated responses. The temporary fixture was removed before publication.
+- Final UI commit `d48c0ec7c826f15bc68e75db68c08e68fff6324a` published successfully (Actions run `39973823055`). Both changed assets were compared again with production; the other 115 previously verified assets are unchanged.
+- Production Worker logs showed no failed Bangladesh API invocation in the checked window; the two returned 404 events were requests for robots.txt/sitemap.xml.
+- Live team join, reset and CSV download were not completed end to end in the production browser. Several authenticated-page clicks did not activate through browser control; no production test session was created. The isolated browser fixture and automated service tests passed, but they are not claimed as a two-device live test. Do a two-device check before using the competition in a room.
 
 ## Materials provenance
 

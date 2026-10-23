@@ -1,8 +1,8 @@
 {
   "url": "https://darrindookie-itcilo.github.io/Bangladesh-Social-Dialogue-Workshops/",
-  "verifiedAt": "2026-10-23T14:40:33.070907+00:00",
+  "verifiedAt": "2026-10-23T14:57:41.603406+00:00",
   "filesMatched": 117,
-  "bytesVerified": 13664637,
+  "bytesVerified": 13664997,
   "removedPaths404": [
     "dist/downloads/A3519987/A3519987_Agenda_Rev.1.docx",
     "dist/downloads/A3519987/A3519987_H10.1_Register_and_indicator_set.docx",
@@ -44,7 +44,7 @@
     {
       "path": "index.html",
       "status": 200,
-      "sha256": "ea64019f1c0766d0fe982e244a5944e838362da021331fa52e4e63f689efa02e",
+      "sha256": "09a1c4e14af14e0a29d7171dda0a36b0b68608f6f655faa78cbd116ffc311573",
       "bytes": 3682
     },
     {
@@ -62,8 +62,8 @@
     {
       "path": "facilitator-live.js",
       "status": 200,
-      "sha256": "322f8236b6a0c936ff3f6ce6ca9645cd1eef7da02e1801fa61352678b8754595",
-      "bytes": 13954
+      "sha256": "74fc96cb46c4298977c6b9483ac19a440daa2b7ce35fd22a707a23f87efd4c9e",
+      "bytes": 14314
     },
     {
       "path": "game-catalog.js",
@@ -725,5 +725,10 @@
       "sha256": "cdad1586900375e6c69af88e7c5d297529bb502b879e1a114c849230b02d32f2",
       "bytes": 172608
     }
+  ],
+  "finalUiCommit": "d48c0ec7c826f15bc68e75db68c08e68fff6324a",
+  "followupFilesRechecked": [
+    "index.html",
+    "facilitator-live.js"
   ]
 }
