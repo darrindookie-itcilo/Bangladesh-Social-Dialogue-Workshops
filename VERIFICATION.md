@@ -1,5 +1,18 @@
 # Verification — 23 October 2026 review fixes
 
+## Participant refinements · latest check
+
+- Published the selection, persistent-disconnect and narrow-code fixes in `0cceaf7b7c9b738eb4980f8815d6824f14b4aa5a` (successful Pages run `40000585677`). All seven changed website assets were compared with production and matched exactly.
+- All 13 dashboard tests passed, including the two new regressions: answer selection preserves the existing controls, focus, draft and scroll position; leaving remains disconnected after reloading the join URL and an explicit rejoin keeps the original team token. The facilitator UI test also validates projector toggling and the CSV filename, headers and result data.
+- On the published site, a fresh QA team joined a dedicated test room. A complete card scored 20 points and the facilitator board showed one answered, one right and 20 points.
+- With pointer clicks on the tablet layout, the scroll position remained at 440 pixels before selection, after selecting the form and after selecting the setting; Lock it in became enabled without rebuilding the card.
+- Projector view was visually inspected at 1280 × 900. The table and its container were both 1137 pixels wide, with all ten columns visible.
+- The first live Leave race check stalled browser control at its native confirmation dialog. A follow-up removes that unnecessary dialog and shows an inline message instead: `62d12729d99ece503687ccab2b3b64df03a88dff` (successful Pages run `40002101530`). Both targeted regression tests passed again, including rejection of any blocking confirmation. The final leave-and-reload interaction has not yet been observed in the production browser because the extension stopped responding.
+- The narrow-code fix was checked in code; its final narrow-width layout has not yet been visually rechecked in the production browser.
+- Export results showed Results exported on the live page, and the generated CSV passed the automated UI check. The browser did not report a completed download, so an actual saved CSV file is not claimed as verified.
+- The temporary room labelled QA refinement 23 Oct remains open. The browser extension stopped responding, and the service rejected the normal command-line cleanup client with HTTP 403; no alternate client or protection bypass was attempted.
+- The board and all game setup screens now explain that elapsed time starts on joining and ask teams to wait for a shared start signal. Scoring rules, question banks and protected teaching files were not changed.
+
 ## This revision
 
 - Applied the attached answer-display shuffling, readable connection/session-code errors, labelled daily recommendations and eight-round mandate challenge.

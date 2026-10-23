@@ -34,6 +34,16 @@ The programme and game desk recommend games for every workshop day, and each rec
 
 **All seven games support live competition and practice.** The competition service now includes the same eight mandate rounds for **Whose Table Is It?**, and the facilitator board offers it in the game selector.
 
+## Participant refinements · 23 October
+
+Answer selections in **Call It What It Is** update the existing controls, keeping the card, scroll position, keyboard focus and draft change in place. Locking an answer and moving to the next card still open the next screen at the top.
+
+**Leave race** disconnects immediately with an inline message. The device remembers the disconnect across reloads of the original join link. Its saved result stays on the facilitator board, and explicitly rejoining with the same alias and code resumes that team. Background responses cannot reactivate a stopped connection.
+
+Session codes stay on one line and the code card stacks its controls in narrower windows. Projector view was visually checked at 1280 × 900.
+
+The elapsed clock starts when a team joins. Brief the room first, then ask all tables to join together; the board and game setup now state this. Use one shared device and browser profile per table.
+
 ## Run a live competition
 
 1. Unlock **Facilitator view** using the existing workshop credentials; select the workshop and **Live team board**.
