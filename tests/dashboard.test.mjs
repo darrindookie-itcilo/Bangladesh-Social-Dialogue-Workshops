@@ -131,7 +131,7 @@ test('leaving a live dialogue game survives a reload of its join link and explic
   const t=await dialogue(page,api);let next;
   try{
     let d=t.w.document;d.querySelector('#toSetup').click();d.querySelector('#teamName').value='Leave QA';d.querySelector('#begin').click();await until(()=>!!d.querySelector('#leaveRaceBtn'),'team did not join');
-    d.querySelector('#leaveRaceBtn').click();assert.match(d.querySelector('#liveStatus').textContent,/Practice/);assert(d.querySelector('#begin'));assert(!d.querySelector('#leaveRaceBtn'));
+    t.w.confirm=()=>{throw new Error('Leaving must not open a blocking confirmation');};d.querySelector('#leaveRaceBtn').click();assert.match(d.querySelector('#liveStatus').textContent,/Practice/);assert(d.querySelector('#begin'));assert(!d.querySelector('#leaveRaceBtn'));
     const storage=Object.fromEntries(Array.from({length:t.w.localStorage.length},(_,i)=>{const key=t.w.localStorage.key(i);return[key,t.w.localStorage.getItem(key)];}));
     assert.equal(JSON.parse(storage['bangladesh-race-v2-dialogue']).detached,true);const before=calls.length;
     next=await dialogue(page,api,storage);d=next.w.document;await pause();

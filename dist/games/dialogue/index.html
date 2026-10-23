@@ -414,7 +414,7 @@ function hud(){
     '<span class="stat">Correct <b>' + correctCount() + '</b>/' + CARDS.length + '</span>' +
     '<span class="stat">Time <b id="hudClock">' + clock(elapsedMs()) + '</b></span>' +
     '<button class="restart" id="restartBtn">Restart</button>' + (LIVE.isLive()?'<button class="restart" id="leaveRaceBtn">Leave race</button>':'') + '';
-  var leave=document.getElementById("leaveRaceBtn");if(leave)leave.onclick=function(){if(!confirm("Leave the live table? Your result stays on the facilitator board. You can rejoin with the same code."))return;var identity={team:S.team,sector:S.sector,play:S.play};LIVE.connection().stop();S=Object.assign(fresh(),identity,{room:"",screen:"setup"});save();render();};
+  var leave=document.getElementById("leaveRaceBtn");if(leave)leave.onclick=function(){var identity={team:S.team,sector:S.sector,play:S.play};LIVE.connection().stop();S=Object.assign(fresh(),identity,{room:"",screen:"setup"});save();render();document.getElementById("liveStatus").textContent="Practice · you left the live race. Your saved result remains on the facilitator board. Use the same team name and code to rejoin.";};
   var b = document.getElementById("restartBtn");
   var armed = false;
   b.onclick = function(){
