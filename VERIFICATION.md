@@ -19,7 +19,12 @@
 
 ## Live verification
 
-Facilitator sign-in on the published GitHub Pages site unlocked teaching materials and connected to the production competition service. Final checks of the published revision and disposable live teams are recorded below when completed. Automated service tests above use an isolated test database and are not a claim that those browser interactions were exercised live.
+- GitHub Pages successfully published commit `c91274e2bfd63927753b128fb96ca39a422c8554` (Actions run `39971011828`). All 117 published files, totalling 13,664,637 bytes, matched the release byte for byte. All 17 obsolete download paths returned 404. See `verification/live-pages.json`.
+- Facilitator sign-in on the published site unlocked teaching materials and connected to the production competition service. The selector lists all seven games.
+- The published mandate game completed all eight rounds in the browser with 80/80 points. Its session-code field is present for live play. The game desk displays six workshop challenges/40 decision rounds plus the twelve-scenario dialogue game; no practice-only restriction remains.
+- The command-line live-service test stopped at the service's browser protection (HTTP 403/code 1010), as required. This is not counted as a passing live test.
+- The facilitator controls use explicit, removable event listeners, and the interface regression check activates the actual submit button after repeated mounts. All 11 tests pass with this change.
+- Live team join, reset and CSV download still require a completed production-browser check; automated service tests above use an isolated test database. Browser-control issues encountered during this run are not reported as passing interactions.
 
 ## Materials provenance
 

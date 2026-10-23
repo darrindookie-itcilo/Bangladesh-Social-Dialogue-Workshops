@@ -1,0 +1,729 @@
+{
+  "url": "https://darrindookie-itcilo.github.io/Bangladesh-Social-Dialogue-Workshops/",
+  "verifiedAt": "2026-10-23T14:40:33.070907+00:00",
+  "filesMatched": 117,
+  "bytesVerified": 13664637,
+  "removedPaths404": [
+    "dist/downloads/A3519987/A3519987_Agenda_Rev.1.docx",
+    "dist/downloads/A3519987/A3519987_H10.1_Register_and_indicator_set.docx",
+    "dist/downloads/A3519987/A3519987_H11.1_Institutional_diagnostic_and_reform_pathway.docx",
+    "dist/downloads/A3519987/A3519987_H12_Proposal_and_action_plan_template.docx",
+    "dist/downloads/A3519987/A3519987_H13_Peer_review_sheet.docx",
+    "dist/downloads/A3519987/A3519987_H14_Plenary_feedback_and_commitment_card.docx",
+    "dist/downloads/A3519987/A3519987_H3.1_Coordination_protocol_template.docx",
+    "dist/downloads/A3519987/A3519987_H4_Comparative_case_notes.docx",
+    "dist/downloads/A3519987/A3519987_H5.1_Evidence_pack_and_options_note.docx",
+    "dist/downloads/A3519987/A3519987_H6.1_Gender_responsiveness_audit_grid.docx",
+    "dist/downloads/A3519987/A3519987_H7.1_Representation_gap_diagnostic.docx",
+    "dist/downloads/A3519987/A3519987_H8.1_Mechanism_design_sheet.docx",
+    "dist/downloads/A3519987/A3519987_H9.1_Conclusions_and_implementation_framework.docx",
+    "dist/downloads/A3519987/A3519987_Participant_Handouts_Rev1.zip",
+    "dist/downloads/A3519988/A3519988_Agenda_Rev.1.docx",
+    "dist/downloads/A3519988/A3519988_Participant_Handouts_Rev1.zip",
+    "dist/downloads/NSDF_Unofficial_English_Translation.pdf"
+  ],
+  "files": [
+    {
+      "path": "app.js",
+      "status": 200,
+      "sha256": "ec6f970a3b62460c1e4d5f46542c8f36616f506b87fa1cbd4836a95f6ad539f3",
+      "bytes": 49212
+    },
+    {
+      "path": "brand.css",
+      "status": 200,
+      "sha256": "5fce8f85a69933f0d0f4a468a0a2f812453b2a7f92721f8ccfcad26a7444b55f",
+      "bytes": 17740
+    },
+    {
+      "path": "data.js",
+      "status": 200,
+      "sha256": "a8ce43a2777833cb40b2371cb7ce83e693b0b220765c16ed385967a07f8000bb",
+      "bytes": 109108
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "ea64019f1c0766d0fe982e244a5944e838362da021331fa52e4e63f689efa02e",
+      "bytes": 3682
+    },
+    {
+      "path": "styles.css",
+      "status": 200,
+      "sha256": "b84d028a9534c663f11bf71ecfae8b788c6a0bbcaf7dfab4f9b6f019132ecc72",
+      "bytes": 21934
+    },
+    {
+      "path": "race.js",
+      "status": 200,
+      "sha256": "d6d79cbbe5a90fbae657bb691803f52e793afb39bb6fb1e58d87ab14a1bf5b7c",
+      "bytes": 6359
+    },
+    {
+      "path": "facilitator-live.js",
+      "status": 200,
+      "sha256": "322f8236b6a0c936ff3f6ce6ca9645cd1eef7da02e1801fa61352678b8754595",
+      "bytes": 13954
+    },
+    {
+      "path": "game-catalog.js",
+      "status": 200,
+      "sha256": "46831396742f7c2380ec26ca5a7fd08042311f2c71fa8db49936e92bcea7c5d5",
+      "bytes": 2775
+    },
+    {
+      "path": ".nojekyll",
+      "status": 200,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "updates.css",
+      "status": 200,
+      "sha256": "204b89420a1259253752e3259fb5ab2ee11d914c07b3561b62784665dc94ea8b",
+      "bytes": 2940
+    },
+    {
+      "path": "protected/manifest.enc",
+      "status": 200,
+      "sha256": "d8bd18086c9f8690d7708463c43a437b735e36c1192c5abfe67075e977939566",
+      "bytes": 133
+    },
+    {
+      "path": "protected/recipes.enc",
+      "status": 200,
+      "sha256": "338bbe134ea816776b6531450dbacd8958ac42bc63547fcd860f51719ee46171",
+      "bytes": 132639
+    },
+    {
+      "path": "protected/kdf.json",
+      "status": 200,
+      "sha256": "fbf55dd107d5b5c62990204e9341762bf8779a58cd22aa7ce3d0dec8fb406e24",
+      "bytes": 115
+    },
+    {
+      "path": "games/bank.json",
+      "status": 200,
+      "sha256": "c8df3c550051c282be230687c16d7970dc05db7e25e3d432e0f375d89bd4cf7d",
+      "bytes": 34782
+    },
+    {
+      "path": "assets/favicon.svg",
+      "status": 200,
+      "sha256": "d43dda841374d5d9ff131f674bf74a9bb702caade7a04607551dc552f285d74f",
+      "bytes": 228
+    },
+    {
+      "path": "assets/itcilo-logo.svg",
+      "status": 200,
+      "sha256": "252d7e6419b2a5307f07d64e58d9db68f646fa429e4670ba4d2537e98cc41f7b",
+      "bytes": 10467
+    },
+    {
+      "path": "protected/parts/p0047.enc",
+      "status": 200,
+      "sha256": "ea1ba731cd9d99c3e75de016a945784e18e27c3683a4d72b438a1fab3478f06a",
+      "bytes": 189764
+    },
+    {
+      "path": "protected/parts/p0039.enc",
+      "status": 200,
+      "sha256": "6f5da500d439bb26dad21afbb850aefac44312555ac6011c06e276c5fcc700b8",
+      "bytes": 189596
+    },
+    {
+      "path": "protected/parts/p0041.enc",
+      "status": 200,
+      "sha256": "7aacada4db183bbcff5dc535b0aadb7f67f1fe48470b8f384d40992345cef2c8",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0070.enc",
+      "status": 200,
+      "sha256": "88b1b6183f6107bef05233bafc9dfa43064e7fb8dec1162d55e5ecaa23e6c981",
+      "bytes": 108686
+    },
+    {
+      "path": "protected/parts/p0069.enc",
+      "status": 200,
+      "sha256": "c140cf30f50ed3869440cdeb1a2dcc54e9de6ead3270de08b25554af67b98f73",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0002.enc",
+      "status": 200,
+      "sha256": "747392bacf61f1ade33a9a23db6da30bf536fde9c39026522703600aff5750aa",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0025.enc",
+      "status": 200,
+      "sha256": "987768b286918163cb1bcd50ea64250061a2844553e5b6ce6b4ce56d74d50402",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0055.enc",
+      "status": 200,
+      "sha256": "2969c72d13abeeaf5b771cdf999320094044d1df8f74d68052eed9c97cde3575",
+      "bytes": 189621
+    },
+    {
+      "path": "protected/parts/p0021.enc",
+      "status": 200,
+      "sha256": "46ce4f5617b03e34378d42815ab2e89da73eb5be20b0f8ca5af629f2c61fb2d0",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0066.enc",
+      "status": 200,
+      "sha256": "4ffaee22b74f9d296db5bbf545bd6a38fd312e8eaa82797fa001b462bbe2f93f",
+      "bytes": 189911
+    },
+    {
+      "path": "protected/parts/p0067.enc",
+      "status": 200,
+      "sha256": "d0aa5a472b30c05a63ba8627504386bfa5086e1363cbe411c58d9b0fc9a8798b",
+      "bytes": 127078
+    },
+    {
+      "path": "protected/parts/p0053.enc",
+      "status": 200,
+      "sha256": "1776cdd2c5eb76d812c82c00f78265ea7a80b51fae817358553ad12de8a18928",
+      "bytes": 189910
+    },
+    {
+      "path": "protected/parts/p0024.enc",
+      "status": 200,
+      "sha256": "526d03b802348df4f22731a8aee4973a85b54ab9f335a54d331287921c7559a8",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0037.enc",
+      "status": 200,
+      "sha256": "e1a0bc47c79b19923fd1405bb5f514e96f6b2f60434e96109351bb8124579053",
+      "bytes": 189735
+    },
+    {
+      "path": "protected/parts/p0022.enc",
+      "status": 200,
+      "sha256": "b061e5130435c026edb669116360bb739ccf735c09c289c1e5101ba2ee07ff9f",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0013.enc",
+      "status": 200,
+      "sha256": "94ae86f99238555003c8136c6a83400e94084685c3f2a2b8d104cb1b432be065",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0064.enc",
+      "status": 200,
+      "sha256": "1cf28c4ec67d6c02aaa02147e3ec62841898e17f2165b409bbb663b3992036fd",
+      "bytes": 10767
+    },
+    {
+      "path": "protected/parts/p0005.enc",
+      "status": 200,
+      "sha256": "70016a7718d8f849318620a64dcead560b151f6cfeb34155d3d2a3896acc4f7c",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0056.enc",
+      "status": 200,
+      "sha256": "a485b2a079bc2e311cc9ca334d7b976185ccd383aa52c0f324956205fa5e6caf",
+      "bytes": 82391
+    },
+    {
+      "path": "protected/parts/p0014.enc",
+      "status": 200,
+      "sha256": "1a5823477145cbb10a9ce6d345892bf2e03279271ffe9c1015a9d02dd9d9aacc",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0009.enc",
+      "status": 200,
+      "sha256": "fe323761e6fd70a1dcabe4f30caf2daa4aeb03c8f94a4ca9291e9a6ff6e2d027",
+      "bytes": 133672
+    },
+    {
+      "path": "protected/parts/p0059.enc",
+      "status": 200,
+      "sha256": "651140976b554395187acb66809c0bb5ed75f3076ecadfdee80d9d22547b18e3",
+      "bytes": 189772
+    },
+    {
+      "path": "protected/parts/p0035.enc",
+      "status": 200,
+      "sha256": "ea6c2fb292945664a6411761d7e11a837622086863d8f2617f9e59d50b0c3578",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0031.enc",
+      "status": 200,
+      "sha256": "6a1c24fa39100876261a4cbfa0ee1a3c9a2f97a4e63ada5f855969f936c361dd",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0065.enc",
+      "status": 200,
+      "sha256": "7db0a112996ae33ad89adcb35afd604420daaec39104f0bb118337b2dac82762",
+      "bytes": 189537
+    },
+    {
+      "path": "protected/parts/p0060.enc",
+      "status": 200,
+      "sha256": "48efb05f6590b62538d7b275660f75ad61cfa94067b5e6b67c2e7be5e5a37d27",
+      "bytes": 153796
+    },
+    {
+      "path": "protected/parts/p0033.enc",
+      "status": 200,
+      "sha256": "5ec23a3d51b8fe8cbcebb9379e7cf9a4734f62d44b4b553ec1b75d0191cee732",
+      "bytes": 189417
+    },
+    {
+      "path": "protected/parts/p0026.enc",
+      "status": 200,
+      "sha256": "1c618012af31dd7074f8907729e0a3cf5920f4e80dffcc178929b9544ba8b5e1",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0038.enc",
+      "status": 200,
+      "sha256": "65dc6f6403de6ab89aa6233134db0fe473b747c7bf3db1ee8c8217cee53b4ab8",
+      "bytes": 10767
+    },
+    {
+      "path": "protected/parts/p0030.enc",
+      "status": 200,
+      "sha256": "8b6f663efadecb0b86f2aaffe49730bca22be5924d9a82542b21c9b6b081c57b",
+      "bytes": 75135
+    },
+    {
+      "path": "protected/parts/p0000.enc",
+      "status": 200,
+      "sha256": "e5d5a112695638fadb8b8258ffc026f5820425495889a4cffee31fe682570a35",
+      "bytes": 69676
+    },
+    {
+      "path": "protected/parts/p0045.enc",
+      "status": 200,
+      "sha256": "63f338d99aa4e8ef853f357ae18ed953f83785fa81d8874133fc41fb924d6dde",
+      "bytes": 189607
+    },
+    {
+      "path": "protected/parts/p0052.enc",
+      "status": 200,
+      "sha256": "b102465712f87f175997a8446e8ae193c572da63590f59f53f47596ca630d4aa",
+      "bytes": 10767
+    },
+    {
+      "path": "protected/parts/p0062.enc",
+      "status": 200,
+      "sha256": "dc45a2b48928899199a29a306d25a31da0cd6061d3f50e6dc30e928339851d23",
+      "bytes": 188087
+    },
+    {
+      "path": "protected/parts/p0068.enc",
+      "status": 200,
+      "sha256": "d915e1c8b6ff682d2f7458fe077731a544b228233bcfb17260c32062bf20f4cc",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0034.enc",
+      "status": 200,
+      "sha256": "bf15781d5d75225f7cef9d860aeb1c1e9ee7272ac381b1225cffb6e008a0f574",
+      "bytes": 146285
+    },
+    {
+      "path": "protected/parts/p0029.enc",
+      "status": 200,
+      "sha256": "b408cd94ec3e7aaffc4d657571af505f51caa0eb29c3960d59738037a95b5f45",
+      "bytes": 189666
+    },
+    {
+      "path": "protected/parts/p0040.enc",
+      "status": 200,
+      "sha256": "74ded48de93939346022402ab23c15902ce9d9398d1235b5095d0b6bde113937",
+      "bytes": 188492
+    },
+    {
+      "path": "protected/parts/p0011.enc",
+      "status": 200,
+      "sha256": "c7095fd49334d219551585f0e64bbb3bdbe97971c57fb51f3444bdd5cd5a539a",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0057.enc",
+      "status": 200,
+      "sha256": "0c5fc1cffb6d1e3dc653b4e6fec3469c3093e3d6c8b3d9a4fb55c6d804f36f89",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0054.enc",
+      "status": 200,
+      "sha256": "cec99d16e599801d876cfc267af23dd48ed8ee481dd62ce09eab37598f280281",
+      "bytes": 187061
+    },
+    {
+      "path": "protected/parts/p0008.enc",
+      "status": 200,
+      "sha256": "9f747b6fc0ad9aea68811bf85ac5232367e08ad64c96807a6dbea1119befb635",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0036.enc",
+      "status": 200,
+      "sha256": "9ca795c73ea8e7247b36fa228e70d2b755f6c7e4efd1f3931ccf07fefd156dfb",
+      "bytes": 188087
+    },
+    {
+      "path": "protected/parts/p0049.enc",
+      "status": 200,
+      "sha256": "448acf5d73eadd96b865f8659f4d4e080e77ea6d755eac73555fe5544131ce2b",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0019.enc",
+      "status": 200,
+      "sha256": "7d6f27b37f0f4231bbb72d2b92efd25d6936c1cee9ed4722d5a100cba34ef7ee",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0050.enc",
+      "status": 200,
+      "sha256": "3a0f41d8c1a6756ae5dc1f36e2ec45f2d5594c8e0718b3856f8bdda2b9c801d1",
+      "bytes": 188087
+    },
+    {
+      "path": "protected/parts/p0023.enc",
+      "status": 200,
+      "sha256": "253693e003ac0588d3ddc9892efef799d3d321b5a2b93cbd5dee22a00203e12d",
+      "bytes": 117171
+    },
+    {
+      "path": "protected/parts/p0061.enc",
+      "status": 200,
+      "sha256": "765d6c62c81f2aef96243ece9722f8a9843c5db02d3f44ef7d986fe6e4de51bd",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0044.enc",
+      "status": 200,
+      "sha256": "f038395968afbbe97ebbb544835817254cc5432a0d13fbd8f7a1151d89d584e4",
+      "bytes": 10767
+    },
+    {
+      "path": "protected/parts/p0003.enc",
+      "status": 200,
+      "sha256": "5a54d9ce467d7b94c4e620b12431bb084517f5b3ac98dc8fb245015622c075f2",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0051.enc",
+      "status": 200,
+      "sha256": "63f9030a9d131226954b736b853b0d7f3c3dfa6b0f584e2057d969ffce8e144c",
+      "bytes": 189735
+    },
+    {
+      "path": "protected/parts/p0001.enc",
+      "status": 200,
+      "sha256": "ea8d4fa1cbe9fd99e2cbbdb81e4b07b0ed376918cc8830e0686daa201209417d",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0006.enc",
+      "status": 200,
+      "sha256": "8efa15b26f34a955bd9c1c4289f9eca8df7a5ed6eb56e4acc33dc230b7beb21f",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0046.enc",
+      "status": 200,
+      "sha256": "a736f81bbcd970be24b8bcb1a2c2fcd61243b029645c38c17ddca92d504a2a76",
+      "bytes": 185732
+    },
+    {
+      "path": "protected/parts/p0016.enc",
+      "status": 200,
+      "sha256": "7488d220d513506a9da65be51fe0eeb43784c1ee56bce9f6857969109e0081a9",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0027.enc",
+      "status": 200,
+      "sha256": "99d54d28158a3f4d0fe05c40f9c7a5c2b808879edd1ac55e4b58c9ba580085fc",
+      "bytes": 189512
+    },
+    {
+      "path": "protected/parts/p0042.enc",
+      "status": 200,
+      "sha256": "a505d370cc3fd972f7a716160ca56df316eeb8c2ef82448aefeaf002b2047e7f",
+      "bytes": 188087
+    },
+    {
+      "path": "protected/parts/p0063.enc",
+      "status": 200,
+      "sha256": "3edbdf9a6c9b4443025b6dd08177bd4c1df190739b562980fb96e18306ac2d6e",
+      "bytes": 189735
+    },
+    {
+      "path": "protected/parts/p0004.enc",
+      "status": 200,
+      "sha256": "7ac10233ba8a5ed4608b3d12cc271d93933a7b9751f927040a3c98ecedd1f875",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0015.enc",
+      "status": 200,
+      "sha256": "1c4eba44f172d352956d640ca026ff1f676634f838dc0534b9dc6fc3659c5309",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0007.enc",
+      "status": 200,
+      "sha256": "30310a81a24e381f912f00b7a70383f6c7b8415ffc4a32ffedc3d90c222e28c0",
+      "bytes": 27502
+    },
+    {
+      "path": "protected/parts/p0018.enc",
+      "status": 200,
+      "sha256": "c6425b8b1d786d5478238d2527ece2957fb26f1a311b9072f5acab7db78e1f07",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0048.enc",
+      "status": 200,
+      "sha256": "823f5f7b8fa3e3d168eb4479d1ad5309d232b4aed84a8607902b4307c99f833f",
+      "bytes": 93199
+    },
+    {
+      "path": "protected/parts/p0010.enc",
+      "status": 200,
+      "sha256": "0ccba7c13c73e0ef5066b538dab73710d3e0516a76debf3a2bcea4882d5ea5b5",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0017.enc",
+      "status": 200,
+      "sha256": "681cfb79046edb41d28baa3218aad0642a655987ea184548ac79ceacac1a349b",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0020.enc",
+      "status": 200,
+      "sha256": "9120d198a20f0b8d5cea4a4fcfeadb60bda62704cf7ffcd17759e3ee8e065bb7",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0032.enc",
+      "status": 200,
+      "sha256": "4da016f2a0fc2fc77e37655aeb8a590a4758491075a6af6fe0d20272c0bf2e02",
+      "bytes": 188087
+    },
+    {
+      "path": "protected/parts/p0043.enc",
+      "status": 200,
+      "sha256": "b8b5db8f10a03b7a690f450b3a8ebe815bb66a30dd7dd32bc8142b169e08dc51",
+      "bytes": 189735
+    },
+    {
+      "path": "protected/parts/p0012.enc",
+      "status": 200,
+      "sha256": "731ba33adf6e9bb0c8b26cd69f6a972829ffd1df9d6d9466bcad63aa08d9b319",
+      "bytes": 180032
+    },
+    {
+      "path": "protected/parts/p0058.enc",
+      "status": 200,
+      "sha256": "8d0eb404a58b9db6cdc4d863f6526de415e0a392e29b48a344036c59b074d661",
+      "bytes": 188087
+    },
+    {
+      "path": "protected/parts/p0028.enc",
+      "status": 200,
+      "sha256": "5e54603a4c5fc45e78019816eb5c09cf3c9f87d424a4925056ab7356607dd0c5",
+      "bytes": 151579
+    },
+    {
+      "path": "games/dialogue/live.js",
+      "status": 200,
+      "sha256": "3d55f6f691115c773a0a65771fb0c9836b67d1a58b93ef5143ea711b90649576",
+      "bytes": 894
+    },
+    {
+      "path": "games/dialogue/index.html",
+      "status": 200,
+      "sha256": "c78dac5cbb10c22b8ef52db6a6cd7d00c6218b63653265faf11b070215d4cdc2",
+      "bytes": 41624
+    },
+    {
+      "path": "games/challenges/index.html",
+      "status": 200,
+      "sha256": "242b9add16d8bd5452e884773678065a46484b383e00e44cfdd5daac40cd39ce",
+      "bytes": 1422
+    },
+    {
+      "path": "games/challenges/challenge.css",
+      "status": 200,
+      "sha256": "5241e36867c8691b5bee8779bb8730715bbf0e37e226d3542021e0bc1328afcb",
+      "bytes": 5070
+    },
+    {
+      "path": "games/challenges/challenge.js",
+      "status": 200,
+      "sha256": "d36f908a518f771218c8bbfcc318d39c07e42e572ba2143ae2f5dec01a21cde0",
+      "bytes": 16694
+    },
+    {
+      "path": "downloads/A3519988/A3519988_H3.1_Meeting_scenarios_agenda_and_notice.docx",
+      "status": 200,
+      "sha256": "68a60a47c35c4fc89342188f1cf1532d148691fbb67a2969a8eb05d7d63e7126",
+      "bytes": 40135
+    },
+    {
+      "path": "downloads/A3519988/A3519988_H1_Self_assessment_and_outcomes.docx",
+      "status": 200,
+      "sha256": "b66ed56663492bb7e71574f5608fb46e90ceff3514b31d6ac660a81b24240dd2",
+      "bytes": 39479
+    },
+    {
+      "path": "downloads/A3519988/A3519988_Agenda_Strengthening_Secretariat_Capacities_Rev.3.1.docx",
+      "status": 200,
+      "sha256": "34c70747af0474fb8d39077aea03cb2b88b16242b9359d23d41e33603632ef3f",
+      "bytes": 21291
+    },
+    {
+      "path": "downloads/A3519988/A3519988_H6_Secretariat_templates_pack.docx",
+      "status": 200,
+      "sha256": "c4c948a37e5ce6efab743772ce559594b4026736f1b608fa2f75061ab6cc8720",
+      "bytes": 42382
+    },
+    {
+      "path": "downloads/A3519988/A3519988_H2.1_Conduct_and_ethics_scenarios.docx",
+      "status": 200,
+      "sha256": "ebda59cf073af8ed92dcbc193b3f7dc23344115aa6751881f3d2bc93429be58a",
+      "bytes": 40994
+    },
+    {
+      "path": "downloads/A3519988/A3519988_Participant_Handouts_2026-10-22.zip",
+      "status": 200,
+      "sha256": "e09276f252cfdd7d29e6d2f43f18f36e83a60ca39d875abc7fbed4df77ebd35f",
+      "bytes": 250352
+    },
+    {
+      "path": "downloads/A3519988/A3519988_H5.1_Reframing_and_neutral_redrafting.docx",
+      "status": 200,
+      "sha256": "64fe2a72db829dae8aec489f85c100624ee25653db91e1c2cb032a4413cbac16",
+      "bytes": 41237
+    },
+    {
+      "path": "downloads/A3519988/A3519988_H4.1_Minutes_audit_and_action_sheet.docx",
+      "status": 200,
+      "sha256": "9c022ef528629343c8b025eeadc2b74e2f02b7f98724667bb9b1d8903ef5621f",
+      "bytes": 40355
+    },
+    {
+      "path": "downloads/A3519987/A3519987_H5.1_Inclusion_audit.docx",
+      "status": 200,
+      "sha256": "41ce9478f96b77adec7a2cc95fbc87325e2d48fcef053bde590a998ca7cea145",
+      "bytes": 40765
+    },
+    {
+      "path": "downloads/A3519987/A3519987_H9.1_Institutional_diagnostic_and_reform_pathway.docx",
+      "status": 200,
+      "sha256": "a0f5a520ff49c01d5654ca4170ca0cff3ff823b8898df00e6f8a3588776acbc7",
+      "bytes": 39796
+    },
+    {
+      "path": "downloads/A3519987/A3519987_H1.1_What_works_and_what_blocks.docx",
+      "status": 200,
+      "sha256": "64cb5cc6fb614cd0db02eb5379860bf0e5bef55bf33b68ebcb6eff6b3b7c9906",
+      "bytes": 39031
+    },
+    {
+      "path": "downloads/A3519987/A3519987_H12_Plenary_feedback_and_commitment_card.docx",
+      "status": 200,
+      "sha256": "7dd8573f036f2d15a42db6365bbd3c3f3ec3932f2abcd7917178390568ecccc1",
+      "bytes": 39372
+    },
+    {
+      "path": "downloads/A3519987/A3519987_H11_Peer_review_sheet.docx",
+      "status": 200,
+      "sha256": "c1097bf1dee3b4d664aabb36aa93916296b461354ec467d02524e8f83a20038e",
+      "bytes": 39328
+    },
+    {
+      "path": "downloads/A3519987/A3519987_H10_Proposal_and_action_plan_template.docx",
+      "status": 200,
+      "sha256": "1b27312b30b78c48280556e34205ccb894657449faf0de4ff71e78cbdc13ec6a",
+      "bytes": 40304
+    },
+    {
+      "path": "downloads/A3519987/A3519987_H2.1_Institutional_mapping_sheet.docx",
+      "status": 200,
+      "sha256": "90ba550d3f77bfacb8199344a00dd994c38745ad99a5e922107c48e4c6705a08",
+      "bytes": 39376
+    },
+    {
+      "path": "downloads/A3519987/A3519987_H4.2_Coordination_protocol_template.docx",
+      "status": 200,
+      "sha256": "57df1a2875c5ff589f17414ab5a0776e0b3018373209223d6eee53b6026c2a78",
+      "bytes": 39953
+    },
+    {
+      "path": "downloads/A3519987/A3519987_H6.1_Pre_negotiation_fact_base.docx",
+      "status": 200,
+      "sha256": "cb9bf0ddddb25697d2cc6e2ecb937ca00dc5decac9c980cd3096c6a55ba3cfd6",
+      "bytes": 40621
+    },
+    {
+      "path": "downloads/A3519987/A3519987_H3.1_Comparative_cases_and_transferability_test.docx",
+      "status": 200,
+      "sha256": "c6096f58da19cd3beb4b76032a8d85fcf5ea93eb21517b500bdb487fe0e1d30f",
+      "bytes": 41544
+    },
+    {
+      "path": "downloads/A3519987/A3519987_H4.1_Tripartite_meeting_role_play.docx",
+      "status": 200,
+      "sha256": "55fb2c69bac2c25eb25f12cef54cb2ba45d7c111515086209409e87785b1271e",
+      "bytes": 41187
+    },
+    {
+      "path": "downloads/A3519987/A3519987_Agenda_Strengthening_Tripartite_SD_Institutions_Rev.3.docx",
+      "status": 200,
+      "sha256": "b9fbfaebbe37e4d885588af4ea6b3d553a882128fb19d440a95a79de13675b76",
+      "bytes": 22136
+    },
+    {
+      "path": "downloads/A3519987/A3519987_H7.1_Conclusions_and_implementation_framework.docx",
+      "status": 200,
+      "sha256": "edf8dc24df6cd676d420d255ee49c2b974bd5cd6781e59e82dd964e93519013a",
+      "bytes": 40432
+    },
+    {
+      "path": "downloads/A3519987/A3519987_Participant_Handouts_2026-10-22.zip",
+      "status": 200,
+      "sha256": "b0a3314ea424102152e841294879cd12cd5a25c5660217b1043db8d675df5027",
+      "bytes": 511016
+    },
+    {
+      "path": "downloads/A3519987/A3519987_H8.1_Register_and_indicator_set.docx",
+      "status": 200,
+      "sha256": "479b8e05dd7b1c06e853f0cb509bf75450217e07b39440479142f4af30f7eb49",
+      "bytes": 39485
+    },
+    {
+      "path": "assets/fonts/OFL.txt",
+      "status": 200,
+      "sha256": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a",
+      "bytes": 4396
+    },
+    {
+      "path": "assets/fonts/noto-sans-latin-variable.woff2",
+      "status": 200,
+      "sha256": "cdad1586900375e6c69af88e7c5d297529bb502b879e1a114c849230b02d32f2",
+      "bytes": 172608
+    }
+  ]
+}
