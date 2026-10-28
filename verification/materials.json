@@ -243,7 +243,7 @@
   },
   {
     "path": "downloads/A3519987/A3519987_Participant_Handouts_2026-10-22.zip",
-    "sha256": "6785fc73ca574fd3b1382c855fb3b94b948a736cebf342399e2575edb5f68a02",
+    "sha256": "1e85ed87b2729d5e729176f7794623f6cbffbda7cddb8af72dbd9e2cfd6889bc",
     "kind": "pack",
     "entries": [
       "A3519987_Agenda_Strengthening_Tripartite_SD_Institutions_Rev.3.docx",
@@ -443,8 +443,8 @@
   },
   {
     "path": "downloads/A3519987/A3519987_H5-7_One_decision_three_gates.docx",
-    "sha256": "1f50bbdbb5820d193ae02cb8143b2342181995ef3317d9a06a23c1e6913e8385",
+    "sha256": "39b8fb750130c4df660807265efbfc6ef0c38394c50cbeb660112d52bdafedc0",
     "kind": "handout",
-    "source": "A3519987_H5-7_One_decision_three_gates (1)(1).docx"
+    "source": "A3519987_H5-7_One_decision_three_gates_(1).docx"
   }
 ]

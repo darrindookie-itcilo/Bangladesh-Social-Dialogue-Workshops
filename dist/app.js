@@ -17,7 +17,7 @@
   function toast(message){const el=$('#toast');el.textContent=message;el.classList.add('show');clearTimeout(el._timer);el._timer=setTimeout(()=>el.classList.remove('show'),4500);}
   function go(page,extra={}){const q=new URLSearchParams(extra),target=page+(q.size?'?'+q:'');if(location.hash.slice(1)===target)render();else location.hash=target;}
   const link=(page,label,cls='button',extra={})=>`<a class="${cls}" href="#${page}${Object.keys(extra).length?'?'+new URLSearchParams(extra):''}">${label}</a>`;
-  const dl=(file,label='Download',cls='button small secondary')=>`<a class="${cls}" href="${esc(file)}?v=20261027-1" download>${label} <span aria-hidden="true">↓</span></a>`;
+  const dl=(file,label='Download',cls='button small secondary')=>`<a class="${cls}" href="${esc(file)}?v=20261028-1" download>${label} <span aria-hidden="true">↓</span></a>`;
   const header=(eyebrow,title,description)=>`<div class="page-head"><div class="eyebrow">${eyebrow}</div><h1>${title}</h1><p>${description}</p></div>`;
   const current=()=>D.workshops.find(w=>w.id===selected);
   const sessions=w=>w.days.flatMap(d=>d.items.filter(s=>s.session).map(s=>({...s,day:d})));
@@ -64,7 +64,7 @@
   }
   function activities(){
     const w=current(),session=numberParam('session',sessions(w).length,0);
-    return switcher('activities')+header(`Workshop ${ordinal(w)} · Participant downloads`,'The activity desk','Choose a session to preview or download the current worksheets and activity packs. Workshop 01, Session 7 includes “One decision, three gates”, added on 27 October 2026.')+`
+    return switcher('activities')+header(`Workshop ${ordinal(w)} · Participant downloads`,'The activity desk','Choose a session to preview or download the current worksheets and activity packs. Workshop 01, Session 7 includes “One decision, three gates”, updated on 28 October 2026.')+`
       <div class="filters"><label class="field">Session<select id="activity-session"><option value="0">All sessions</option>${sessions(w).map(s=>`<option value="${s.session}" ${s.session===session?'selected':''}>${s.session} · ${esc(s.title)}</option>`).join('')}</select></label><label class="field">Find a handout<input id="activity-search" type="search" placeholder="e.g. evidence, minutes, action plan" maxlength="100"></label>${dl(w.pack,'New handouts + '+w.revision+' agenda','button small secondary')}</div>
       ${session&&w.id==='secretariats'&&session>=6?'<div class="callout"><strong>The updated reusable toolkit supports Modules 6–11.</strong> It includes eight secretariat templates, including the annual budget template. Separate activity sheets mentioned in the trainer scripts for these modules were not included in the supplied materials.</div>':''}
       <div id="activity-results" aria-live="polite">${resourceCards(w,session)}</div>`;
